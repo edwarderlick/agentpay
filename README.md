@@ -103,8 +103,9 @@ These links are public. The Studio Next explorer method column often prints `(co
 | Native refund to owner | [0x18d475b4…cecb](https://explorer-studio-dev.genlayer.com/tx/0x18d475b4f6826ab416b450ad7c6d9f1b84f5b7a960d4371de328aeb201cbcecb) |
 | Second merchant withdraw 0.005 GEN | [0xacc2665c…3fbb](https://explorer-studio-dev.genlayer.com/tx/0xacc2665cd10a94533dc8e2cd14b37674218b5dc4dc783efb705c082ccab93fbb) |
 | Create + deposit `m-c690fd8825e402e54f11` (1 GEN, still active) | [0x812b29d0…88d5](https://explorer-studio-dev.genlayer.com/tx/0x812b29d0f72c40bf317cb7005ef52482a93f03fb121321f3771988c933c688d5) |
+| Vercel MetaMask create + deposit `m-e59146e56f2f36d3b770` (0.01 GEN, still active) | [0xd719d608…60be](https://explorer-studio-dev.genlayer.com/tx/0xd719d60892e88ced3bcfe04adf7fdd8b842336d4bef0dbdd1eb2e342fe3c60be) |
 
-Public app routes on the live demo: [`/`](https://agentpay-omega-one.vercel.app/), [`/how-it-works`](https://agentpay-omega-one.vercel.app/how-it-works), [`/dashboard`](https://agentpay-omega-one.vercel.app/dashboard), [`/explore`](https://agentpay-omega-one.vercel.app/explore), [`/credits`](https://agentpay-omega-one.vercel.app/credits), [`/mandates/new`](https://agentpay-omega-one.vercel.app/mandates/new), [`/mandates/m-c690fd8825e402e54f11`](https://agentpay-omega-one.vercel.app/mandates/m-c690fd8825e402e54f11) (active, 1 GEN remaining as of 2026-10-09), [`/mandates/m-a56f4429378650ae158a`](https://agentpay-omega-one.vercel.app/mandates/m-a56f4429378650ae158a) (closed). Production JS inlines contract `0x754E97a763ed0Ae12da496A68d7a47090F3f1c2F`, chain `61997`, and the Studio Next RPC. Design demo defaults off (`demoMode` starts `false`).
+Public app routes on the live demo: [`/`](https://agentpay-omega-one.vercel.app/), [`/how-it-works`](https://agentpay-omega-one.vercel.app/how-it-works), [`/dashboard`](https://agentpay-omega-one.vercel.app/dashboard), [`/explore`](https://agentpay-omega-one.vercel.app/explore), [`/credits`](https://agentpay-omega-one.vercel.app/credits), [`/mandates/new`](https://agentpay-omega-one.vercel.app/mandates/new), [`/mandates/m-e59146e56f2f36d3b770`](https://agentpay-omega-one.vercel.app/mandates/m-e59146e56f2f36d3b770) (Vercel MetaMask create, 0.01 GEN remaining), [`/mandates/m-c690fd8825e402e54f11`](https://agentpay-omega-one.vercel.app/mandates/m-c690fd8825e402e54f11) (active, 1 GEN remaining as of 2026-10-09), [`/mandates/m-a56f4429378650ae158a`](https://agentpay-omega-one.vercel.app/mandates/m-a56f4429378650ae158a) (closed). Production JS inlines contract `0x754E97a763ed0Ae12da496A68d7a47090F3f1c2F`, chain `61997`, and the Studio Next RPC. Design demo defaults off (`demoMode` starts `false`). WalletConnect QR signing is unverified.
 
 **Product vs fixtures.** Every hash in the table targets `0x754E97a7…1c2F`. DENIED / UNCLEAR / injection / revert cases in [docs/EVIDENCE_MATRIX.md](docs/EVIDENCE_MATRIX.md) used **new** `gltest` contracts. Those fixture addresses and hashes are not product-contract activity.
 
@@ -147,7 +148,7 @@ Writes: `create_mandate`, `issue_invoice`, `request_payment`, `withdraw_credit`,
 ### Honest limits
 
 - No audit, no mainnet, no real-money payments.
-- No live Vercel demo in this submission.
+- WalletConnect QR / mobile signing is unverified in this submission.
 - No autonomous agent runtime.
 - Studio Next can return `gen_call` `-32006` (server busy); views retry.
 - Explorer UI labels are unreliable; use RPC calldata and contract views.
@@ -196,7 +197,7 @@ Three-wallet walkthrough: [docs/REVIEWER_DEMO.md](docs/REVIEWER_DEMO.md).
 
 CI on `main`: `.github/workflows/ci.yml` (lint + `pytest tests/direct/`) and `.github/workflows/frontend.yml` (`npm ci`, typecheck, vitest, webpack production build).
 
-Last local gate (2026-10-09): frontend vitest **22 files / 159 tests**; `tsc --noEmit` clean; `next build --webpack` (Next **16.0.10**, React2Shell patch) succeeded. Direct-mode pytest **62 passed** and `genvm-lint` were last run on the orphan-root commit. Vercel production build used `next build --webpack` (Next 16.0.10) with Root Directory `frontend`.
+Last local gate (2026-10-09): frontend vitest **23 files / 166 tests**; `tsc --noEmit` clean; `next build --webpack` (Next **16.4.0**) succeeded. Direct-mode pytest **62 passed** and `genvm-lint` were last run on the orphan-root commit. Vercel production build uses `next build --webpack` with Root Directory `frontend`.
 
 ## Built from
 

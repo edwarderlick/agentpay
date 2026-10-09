@@ -70,5 +70,5 @@ npm run build
 3. Design demo stays off by default; enabling it shows **DESIGN DEMO — NOT CHAIN DATA**.
 4. Connect an injected wallet. Confirm the same wallet name/address is used in write panels.
 5. If the wallet is on another chain, public reads still work; writes stay blocked until chain `61997`.
-6. If WalletConnect is configured, scan from a mobile EVM wallet and confirm the QR modal.
+6. WalletConnect QR / mobile signing is **unverified** in this submission. Injected MetaMask create on production is documented in [REVIEWER_EVIDENCE.md](REVIEWER_EVIDENCE.md).
 7. Do not treat a successful page load as a signed payout.
