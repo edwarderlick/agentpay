@@ -112,7 +112,11 @@ export default function MandateDetailPage() {
   if (!demoMode && mandateQuery.isError) {
     return (
       <div className="mx-auto max-w-7xl px-4 py-12 md:px-8">
-        <ErrorState body={(mandateQuery.error as Error).message} />
+        <ErrorState
+          title="Mandate read failed"
+          body={(mandateQuery.error as Error).message}
+          onRetry={() => void mandateQuery.refetch()}
+        />
       </div>
     );
   }
@@ -180,7 +184,11 @@ export default function MandateDetailPage() {
     withdrawals,
     refund,
   });
-  const closedCopy = closedRefundCopy({ remainingBudget: current.remainingBudget, refund });
+  const closedCopy = closedRefundCopy({
+    remainingBudget: current.remainingBudget,
+    refund,
+    status: current.status,
+  });
   const refreshing =
     !demoMode &&
     ((mandateQuery.isFetching && !mandateQuery.isLoading) ||

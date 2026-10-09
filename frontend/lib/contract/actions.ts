@@ -263,6 +263,7 @@ export function closeRefundPreview(remainingBudget: string): string {
 export function closedRefundCopy(input: {
   remainingBudget: string;
   refund: PayoutRecord | null;
+  status: MandateStatus;
 }): { headline: string; body: string; verified: boolean } {
   const remaining = formatGen(input.remainingBudget);
   if (input.refund && isNativeDeliveryConfirmed(input.refund)) {
@@ -290,6 +291,17 @@ export function closedRefundCopy(input: {
     return {
       headline: "Close submitted — refund pending",
       body: "The close transaction is still in flight. Remaining budget and refund delivery will update after finalization.",
+      verified: false,
+    };
+  }
+  if (input.status !== "closed") {
+    const statusLine =
+      input.status === "active"
+        ? "This mandate is still active on chain."
+        : "This mandate is not closed on chain.";
+    return {
+      headline: "Owner refund not initiated",
+      body: `No owner refund has been initiated. ${statusLine} Close refunds only uncommitted remaining budget and does not erase merchant credit.`,
       verified: false,
     };
   }
@@ -493,10 +505,14 @@ export function buildMandateJourney(input: {
     },
     {
       id: "refund",
-      label: "Owner refund verified",
+      label: isNativeDeliveryConfirmed(input.refund) ? "Owner refund verified" : "Owner refund",
       state: isNativeDeliveryConfirmed(input.refund) ? "done" : input.refund?.txHash ? "current" : "waiting",
       source: "local-evidence",
-      detail: closedRefundCopy({ remainingBudget: input.mandate.remainingBudget, refund: input.refund }).body,
+      detail: closedRefundCopy({
+        remainingBudget: input.mandate.remainingBudget,
+        refund: input.refund,
+        status: input.mandate.status,
+      }).body,
     },
     {
       id: "credit-left",

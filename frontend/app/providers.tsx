@@ -6,6 +6,7 @@ import { Toaster } from "sonner";
 import { WalletProvider } from "@/lib/genlayer/WalletProvider";
 import { DemoModeProvider } from "@/lib/demo/DemoMode";
 import { ContractReadyProvider } from "@/lib/hooks/useContractReady";
+import { chainReadRetryDelay, shouldRetryChainRead } from "@/lib/query/chainReadRetry";
 
 export function Providers({ children }: { children: React.ReactNode }) {
   const [queryClient] = useState(
@@ -15,6 +16,8 @@ export function Providers({ children }: { children: React.ReactNode }) {
           queries: {
             staleTime: 2000,
             refetchOnWindowFocus: false,
+            retry: shouldRetryChainRead,
+            retryDelay: chainReadRetryDelay,
           },
         },
       }),

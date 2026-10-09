@@ -154,7 +154,7 @@ describe("live closed mandate and zero credit", () => {
   it("does not invent a payout hash or native delivery from empty localStorage", () => {
     expect(loadPayouts()).toEqual([]);
     expect(listPayouts(LIVE_ID, "withdraw")).toEqual([]);
-    const copy = closedRefundCopy({ remainingBudget: "0", refund: null });
+    const copy = closedRefundCopy({ remainingBudget: "0", refund: null, status: "closed" });
     expect(copy.verified).toBe(false);
     expect(copy.headline).toBe("Mandate closed");
     expect(copy.body).toMatch(/no locally observed refund hash/i);
@@ -177,7 +177,7 @@ describe("live closed mandate and zero credit", () => {
       deliveryVerified: true,
     });
     markDeliveryLive(refund.id);
-    const verified = closedRefundCopy({ remainingBudget: "0", refund });
+    const verified = closedRefundCopy({ remainingBudget: "0", refund, status: "closed" });
     expect(verified.verified).toBe(true);
     expect(verified.headline).toMatch(/Closed — 0\.01 test GEN refunded to owner/);
 
@@ -185,6 +185,7 @@ describe("live closed mandate and zero credit", () => {
     const unverified = closedRefundCopy({
       remainingBudget: "0",
       refund: { ...refund, deliveryVerified: false, settled: false },
+      status: "closed",
     });
     expect(unverified.verified).toBe(false);
     expect(unverified.headline).toMatch(/unresolved/i);
@@ -391,7 +392,7 @@ describe("finalized but unverified delivery is not paid", () => {
       deliveryVerified: false,
       settled: false,
     });
-    const copy = closedRefundCopy({ remainingBudget: "0", refund });
+    const copy = closedRefundCopy({ remainingBudget: "0", refund, status: "closed" });
     expect(copy.verified).toBe(false);
     expect(copy.headline).not.toMatch(/refunded to owner/i);
     const steps = buildMandateJourney({
@@ -469,5 +470,115 @@ describe("next action and journey for the connected role", () => {
     expect(screen.queryByText(WITHDRAW_1)).not.toBeInTheDocument();
     expect(screen.queryByText(CLOSE_TX)).not.toBeInTheDocument();
     expect(screen.getByText(/Final merchant credit zero/)).toBeInTheDocument();
+    const refund = steps.find((step) => step.id === "refund");
+    expect(refund?.label).toBe("Owner refund");
+    expect(refund?.state).toBe("waiting");
+    expect(refund?.detail).toMatch(/no locally observed refund hash/i);
+    expect(refund?.detail).not.toMatch(/native delivery is verified/i);
   });
 });
+
+describe("owner refund copy follows mandate status and payout evidence", () => {
+  const liveActive: Mandate = {
+    ...liveClosed,
+    id: "m-c690fd8825e402e54f11",
+    title: "Live active mandate",
+    remainingBudget: "1000000000000000000",
+    status: "active",
+  };
+
+  it("says no owner refund has been initiated for an active mandate with no close hash", () => {
+    const copy = closedRefundCopy({
+      remainingBudget: liveActive.remainingBudget,
+      refund: null,
+      status: "active",
+    });
+    expect(copy.verified).toBe(false);
+    expect(copy.headline).toBe("Owner refund not initiated");
+    expect(copy.body).toMatch(/no owner refund has been initiated/i);
+    expect(copy.body).toMatch(/still active on chain/i);
+    expect(copy.body).not.toMatch(/closed on chain/i);
+
+    const steps = buildMandateJourney({
+      mandate: liveActive,
+      invoices: [],
+      decisions: [],
+      credit: null,
+      withdrawals: [],
+      refund: null,
+    });
+    const refund = steps.find((step) => step.id === "refund");
+    expect(refund?.label).toBe("Owner refund");
+    expect(refund?.state).toBe("waiting");
+    expect(refund?.source).toBe("local-evidence");
+    expect(refund?.detail).toMatch(/no owner refund has been initiated/i);
+    expect(refund?.detail).not.toMatch(/this mandate is closed on chain/i);
+    render(<MandateJourney steps={steps} />);
+    expect(screen.getByText(/No owner refund has been initiated/)).toBeInTheDocument();
+    expect(screen.queryByText(/This mandate is closed on chain/)).not.toBeInTheDocument();
+  });
+
+  it("does not claim verified native delivery for a closed mandate without a locally observed hash", () => {
+    const copy = closedRefundCopy({ remainingBudget: "0", refund: null, status: "closed" });
+    expect(copy.verified).toBe(false);
+    expect(copy.body).toMatch(/no locally observed refund hash/i);
+    expect(copy.body).not.toMatch(/native delivery is verified/i);
+    expect(copy.headline).not.toMatch(/refunded to owner/i);
+
+    const steps = buildMandateJourney({
+      mandate: liveClosed,
+      invoices: [],
+      decisions: [],
+      credit: null,
+      withdrawals: [],
+      refund: null,
+    });
+    const refund = steps.find((step) => step.id === "refund");
+    expect(refund?.label).toBe("Owner refund");
+    expect(refund?.state).toBe("waiting");
+    expect(refund?.detail).toMatch(/native delivery is not claimed/i);
+  });
+
+  it("keeps verified owner-refund copy behind strict native delivery checks", () => {
+    const refund = payout({
+      id: "refund-strict",
+      kind: "refund",
+      recipient: OWNER,
+      txHash: CLOSE_TX,
+      amountWei: TEN_FINNEY,
+      finalized: true,
+      executionOk: true,
+      settled: true,
+      deliveryChecked: true,
+      deliveryVerified: true,
+    });
+    const withoutLive = closedRefundCopy({ remainingBudget: "0", refund, status: "closed" });
+    expect(withoutLive.verified).toBe(false);
+
+    markDeliveryLive(refund.id);
+    const verified = closedRefundCopy({ remainingBudget: "0", refund, status: "closed" });
+    expect(verified.verified).toBe(true);
+    expect(verified.headline).toMatch(/refunded to owner/i);
+
+    const steps = buildMandateJourney({
+      mandate: liveClosed,
+      invoices: [],
+      decisions: [],
+      credit: liveCredit,
+      withdrawals: [],
+      refund,
+    });
+    const refundStep = steps.find((step) => step.id === "refund");
+    expect(refundStep?.label).toBe("Owner refund verified");
+    expect(refundStep?.state).toBe("done");
+    expect(refundStep?.detail).toMatch(/native delivery is verified/i);
+
+    const incomplete = closedRefundCopy({
+      remainingBudget: "0",
+      refund: { ...refund, deliveryVerified: true, settled: false },
+      status: "closed",
+    });
+    expect(incomplete.verified).toBe(false);
+  });
+});
+

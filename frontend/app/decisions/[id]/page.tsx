@@ -36,7 +36,11 @@ export default function DecisionDetailPage() {
   if (!demoMode && decisionQuery.isError) {
     return (
       <div className="mx-auto max-w-7xl px-4 py-12 md:px-8">
-        <ErrorState body={(decisionQuery.error as Error).message} />
+        <ErrorState
+          title="Decision read failed"
+          body={(decisionQuery.error as Error).message}
+          onRetry={() => void decisionQuery.refetch()}
+        />
       </div>
     );
   }

@@ -32,7 +32,11 @@ export default function InvoiceDetailPage() {
   if (!demoMode && invoiceQuery.isError) {
     return (
       <div className="mx-auto max-w-7xl px-4 py-12 md:px-8">
-        <ErrorState body={(invoiceQuery.error as Error).message} />
+        <ErrorState
+          title="Invoice read failed"
+          body={(invoiceQuery.error as Error).message}
+          onRetry={() => void invoiceQuery.refetch()}
+        />
       </div>
     );
   }
