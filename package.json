@@ -1,0 +1,17 @@
+{
+  "name": "agentpay",
+  "type": "module",
+  "private": true,
+  "workspaces": ["frontend"],
+  "scripts": {
+    "dev": "cd frontend && npm run dev",
+    "build": "cd frontend && npm run build",
+    "start": "cd frontend && npm run start",
+    "lint": "cd frontend && npm run lint",
+    "test:fees": "gltest tests/integration/test_agentpay.py::test_fee_profile_agentpay --network studio_devnet --fee-profile frontend/fee-profile.json -v -s",
+    "deploy": "genlayer deploy"
+  },
+  "devDependencies": {
+    "genlayer-js": "2.0.0-rc.1"
+  }
+}

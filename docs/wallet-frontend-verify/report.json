@@ -1,0 +1,763 @@
+{
+  "startedAt": "2026-10-07T15:11:48.294Z",
+  "results": [
+    {
+      "viewport": "mobile",
+      "route": "/",
+      "url": "http://localhost:3000/",
+      "ok": false,
+      "walletLabel": null,
+      "hasWalletEllipsis": false,
+      "overflow": false,
+      "connectWorks": null,
+      "menuWorks": null,
+      "console": [],
+      "screenshot": null,
+      "error": "page.goto: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"http://localhost:3000/\", waiting until \"networkidle\"\u001b[22m\n"
+    },
+    {
+      "viewport": "mobile",
+      "route": "/how-it-works",
+      "url": "http://localhost:3000/how-it-works",
+      "ok": true,
+      "walletLabel": "Connect wallet",
+      "hasWalletEllipsis": false,
+      "overflow": false,
+      "connectWorks": null,
+      "menuWorks": null,
+      "console": [
+        "warning: ../node_modules/@metamask/sdk/dist/browser/es/metamask-sdk.js\nModule not found: Can't resolve '@react-native-async-storage/async-storage' in 'D:\\AgentPay\\app\\node_modules\\@metamask\\sdk\\dist\\browser\\es'"
+      ],
+      "screenshot": "D:/AgentPay/app/docs/wallet-frontend-verify/mobile-how-it-works.png",
+      "error": null,
+      "status": 200
+    },
+    {
+      "viewport": "mobile",
+      "route": "/dashboard",
+      "url": "http://localhost:3000/dashboard",
+      "ok": true,
+      "walletLabel": "Connect wallet",
+      "hasWalletEllipsis": false,
+      "overflow": false,
+      "connectWorks": null,
+      "menuWorks": null,
+      "console": [
+        "warning: ../node_modules/@metamask/sdk/dist/browser/es/metamask-sdk.js\nModule not found: Can't resolve '@react-native-async-storage/async-storage' in 'D:\\AgentPay\\app\\node_modules\\@metamask\\sdk\\dist\\browser\\es'\n\nImport trace for requested module:\n../node_modules/@metamask/sdk/dist/browser/es/metamask-sdk.js\n../node_modules/@wagmi/connectors/dist/esm/metaMask.js\n../node_modules/@wagmi/connectors/dist/esm/exports/index.js\n./lib/genlayer/wagmi.ts\n./lib/genlayer/WalletProvider.tsx\n./app/providers.tsx",
+        "warning: ../node_modules/@metamask/sdk/dist/browser/es/metamask-sdk.js\nModule not found: Can't resolve '@react-native-async-storage/async-storage' in 'D:\\AgentPay\\app\\node_modules\\@metamask\\sdk\\dist\\browser\\es'"
+      ],
+      "screenshot": "D:/AgentPay/app/docs/wallet-frontend-verify/mobile-dashboard.png",
+      "error": null,
+      "status": 200
+    },
+    {
+      "viewport": "mobile",
+      "route": "/explore",
+      "url": "http://localhost:3000/explore",
+      "ok": true,
+      "walletLabel": "Connect wallet",
+      "hasWalletEllipsis": false,
+      "overflow": false,
+      "connectWorks": null,
+      "menuWorks": null,
+      "console": [
+        "warning: ../node_modules/@metamask/sdk/dist/browser/es/metamask-sdk.js\nModule not found: Can't resolve '@react-native-async-storage/async-storage' in 'D:\\AgentPay\\app\\node_modules\\@metamask\\sdk\\dist\\browser\\es'\n\nImport trace for requested module:\n../node_modules/@metamask/sdk/dist/browser/es/metamask-sdk.js\n../node_modules/@wagmi/connectors/dist/esm/metaMask.js\n../node_modules/@wagmi/connectors/dist/esm/exports/index.js\n./lib/genlayer/wagmi.ts\n./lib/genlayer/WalletProvider.tsx\n./app/providers.tsx",
+        "warning: ../node_modules/@metamask/sdk/dist/browser/es/metamask-sdk.js\nModule not found: Can't resolve '@react-native-async-storage/async-storage' in 'D:\\AgentPay\\app\\node_modules\\@metamask\\sdk\\dist\\browser\\es'"
+      ],
+      "screenshot": "D:/AgentPay/app/docs/wallet-frontend-verify/mobile-explore.png",
+      "error": null,
+      "status": 200
+    },
+    {
+      "viewport": "mobile",
+      "route": "/credits",
+      "url": "http://localhost:3000/credits",
+      "ok": true,
+      "walletLabel": "Connect wallet",
+      "hasWalletEllipsis": false,
+      "overflow": false,
+      "connectWorks": null,
+      "menuWorks": null,
+      "console": [
+        "warning: ../node_modules/@metamask/sdk/dist/browser/es/metamask-sdk.js\nModule not found: Can't resolve '@react-native-async-storage/async-storage' in 'D:\\AgentPay\\app\\node_modules\\@metamask\\sdk\\dist\\browser\\es'\n\nImport trace for requested module:\n../node_modules/@metamask/sdk/dist/browser/es/metamask-sdk.js\n../node_modules/@wagmi/connectors/dist/esm/metaMask.js\n../node_modules/@wagmi/connectors/dist/esm/exports/index.js\n./lib/genlayer/wagmi.ts\n./lib/genlayer/WalletProvider.tsx\n./app/providers.tsx",
+        "warning: ../node_modules/@metamask/sdk/dist/browser/es/metamask-sdk.js\nModule not found: Can't resolve '@react-native-async-storage/async-storage' in 'D:\\AgentPay\\app\\node_modules\\@metamask\\sdk\\dist\\browser\\es'"
+      ],
+      "screenshot": "D:/AgentPay/app/docs/wallet-frontend-verify/mobile-credits.png",
+      "error": null,
+      "status": 200
+    },
+    {
+      "viewport": "mobile",
+      "route": "/mandates/new",
+      "url": "http://localhost:3000/mandates/new",
+      "ok": true,
+      "walletLabel": "Connect wallet",
+      "hasWalletEllipsis": false,
+      "overflow": false,
+      "connectWorks": null,
+      "menuWorks": null,
+      "console": [
+        "warning: ../node_modules/@metamask/sdk/dist/browser/es/metamask-sdk.js\nModule not found: Can't resolve '@react-native-async-storage/async-storage' in 'D:\\AgentPay\\app\\node_modules\\@metamask\\sdk\\dist\\browser\\es'\n\nImport trace for requested module:\n../node_modules/@metamask/sdk/dist/browser/es/metamask-sdk.js\n../node_modules/@wagmi/connectors/dist/esm/metaMask.js\n../node_modules/@wagmi/connectors/dist/esm/exports/index.js\n./lib/genlayer/wagmi.ts\n./lib/genlayer/WalletProvider.tsx\n./app/providers.tsx",
+        "warning: ../node_modules/@metamask/sdk/dist/browser/es/metamask-sdk.js\nModule not found: Can't resolve '@react-native-async-storage/async-storage' in 'D:\\AgentPay\\app\\node_modules\\@metamask\\sdk\\dist\\browser\\es'"
+      ],
+      "screenshot": "D:/AgentPay/app/docs/wallet-frontend-verify/mobile-mandates-new.png",
+      "error": null,
+      "status": 200
+    },
+    {
+      "viewport": "mobile",
+      "route": "/invoices/new",
+      "url": "http://localhost:3000/invoices/new",
+      "ok": true,
+      "walletLabel": "Connect wallet",
+      "hasWalletEllipsis": false,
+      "overflow": false,
+      "connectWorks": null,
+      "menuWorks": null,
+      "console": [
+        "warning: ../node_modules/@metamask/sdk/dist/browser/es/metamask-sdk.js\nModule not found: Can't resolve '@react-native-async-storage/async-storage' in 'D:\\AgentPay\\app\\node_modules\\@metamask\\sdk\\dist\\browser\\es'\n\nImport trace for requested module:\n../node_modules/@metamask/sdk/dist/browser/es/metamask-sdk.js\n../node_modules/@wagmi/connectors/dist/esm/metaMask.js\n../node_modules/@wagmi/connectors/dist/esm/exports/index.js\n./lib/genlayer/wagmi.ts\n./lib/genlayer/WalletProvider.tsx\n./app/providers.tsx",
+        "warning: ../node_modules/@metamask/sdk/dist/browser/es/metamask-sdk.js\nModule not found: Can't resolve '@react-native-async-storage/async-storage' in 'D:\\AgentPay\\app\\node_modules\\@metamask\\sdk\\dist\\browser\\es'"
+      ],
+      "screenshot": "D:/AgentPay/app/docs/wallet-frontend-verify/mobile-invoices-new.png",
+      "error": null,
+      "status": 200
+    },
+    {
+      "viewport": "mobile",
+      "route": "/requests/new",
+      "url": "http://localhost:3000/requests/new",
+      "ok": true,
+      "walletLabel": "Connect wallet",
+      "hasWalletEllipsis": false,
+      "overflow": false,
+      "connectWorks": null,
+      "menuWorks": null,
+      "console": [
+        "warning: ../node_modules/@metamask/sdk/dist/browser/es/metamask-sdk.js\nModule not found: Can't resolve '@react-native-async-storage/async-storage' in 'D:\\AgentPay\\app\\node_modules\\@metamask\\sdk\\dist\\browser\\es'\n\nImport trace for requested module:\n../node_modules/@metamask/sdk/dist/browser/es/metamask-sdk.js\n../node_modules/@wagmi/connectors/dist/esm/metaMask.js\n../node_modules/@wagmi/connectors/dist/esm/exports/index.js\n./lib/genlayer/wagmi.ts\n./lib/genlayer/WalletProvider.tsx\n./app/providers.tsx",
+        "warning: ../node_modules/@metamask/sdk/dist/browser/es/metamask-sdk.js\nModule not found: Can't resolve '@react-native-async-storage/async-storage' in 'D:\\AgentPay\\app\\node_modules\\@metamask\\sdk\\dist\\browser\\es'"
+      ],
+      "screenshot": "D:/AgentPay/app/docs/wallet-frontend-verify/mobile-requests-new.png",
+      "error": null,
+      "status": 200
+    },
+    {
+      "viewport": "mobile",
+      "route": "/mandates/m-demo",
+      "url": "http://localhost:3000/mandates/m-demo",
+      "ok": true,
+      "walletLabel": "Connect wallet",
+      "hasWalletEllipsis": false,
+      "overflow": false,
+      "connectWorks": null,
+      "menuWorks": null,
+      "console": [
+        "warning: ../node_modules/@metamask/sdk/dist/browser/es/metamask-sdk.js\nModule not found: Can't resolve '@react-native-async-storage/async-storage' in 'D:\\AgentPay\\app\\node_modules\\@metamask\\sdk\\dist\\browser\\es'\n\nImport trace for requested module:\n../node_modules/@metamask/sdk/dist/browser/es/metamask-sdk.js\n../node_modules/@wagmi/connectors/dist/esm/metaMask.js\n../node_modules/@wagmi/connectors/dist/esm/exports/index.js\n./lib/genlayer/wagmi.ts\n./lib/genlayer/WalletProvider.tsx\n./app/providers.tsx",
+        "warning: ../node_modules/@metamask/sdk/dist/browser/es/metamask-sdk.js\nModule not found: Can't resolve '@react-native-async-storage/async-storage' in 'D:\\AgentPay\\app\\node_modules\\@metamask\\sdk\\dist\\browser\\es'"
+      ],
+      "screenshot": "D:/AgentPay/app/docs/wallet-frontend-verify/mobile-mandates-m-demo.png",
+      "error": null,
+      "status": 200
+    },
+    {
+      "viewport": "mobile",
+      "route": "/invoices/i-demo",
+      "url": "http://localhost:3000/invoices/i-demo",
+      "ok": true,
+      "walletLabel": "Connect wallet",
+      "hasWalletEllipsis": false,
+      "overflow": false,
+      "connectWorks": null,
+      "menuWorks": null,
+      "console": [
+        "warning: ../node_modules/@metamask/sdk/dist/browser/es/metamask-sdk.js\nModule not found: Can't resolve '@react-native-async-storage/async-storage' in 'D:\\AgentPay\\app\\node_modules\\@metamask\\sdk\\dist\\browser\\es'\n\nImport trace for requested module:\n../node_modules/@metamask/sdk/dist/browser/es/metamask-sdk.js\n../node_modules/@wagmi/connectors/dist/esm/metaMask.js\n../node_modules/@wagmi/connectors/dist/esm/exports/index.js\n./lib/genlayer/wagmi.ts\n./lib/genlayer/WalletProvider.tsx\n./app/providers.tsx",
+        "warning: ../node_modules/@metamask/sdk/dist/browser/es/metamask-sdk.js\nModule not found: Can't resolve '@react-native-async-storage/async-storage' in 'D:\\AgentPay\\app\\node_modules\\@metamask\\sdk\\dist\\browser\\es'"
+      ],
+      "screenshot": "D:/AgentPay/app/docs/wallet-frontend-verify/mobile-invoices-i-demo.png",
+      "error": null,
+      "status": 200
+    },
+    {
+      "viewport": "mobile",
+      "route": "/decisions/d-demo",
+      "url": "http://localhost:3000/decisions/d-demo",
+      "ok": true,
+      "walletLabel": "Connect wallet",
+      "hasWalletEllipsis": false,
+      "overflow": false,
+      "connectWorks": null,
+      "menuWorks": null,
+      "console": [
+        "warning: ../node_modules/@metamask/sdk/dist/browser/es/metamask-sdk.js\nModule not found: Can't resolve '@react-native-async-storage/async-storage' in 'D:\\AgentPay\\app\\node_modules\\@metamask\\sdk\\dist\\browser\\es'\n\nImport trace for requested module:\n../node_modules/@metamask/sdk/dist/browser/es/metamask-sdk.js\n../node_modules/@wagmi/connectors/dist/esm/metaMask.js\n../node_modules/@wagmi/connectors/dist/esm/exports/index.js\n./lib/genlayer/wagmi.ts\n./lib/genlayer/WalletProvider.tsx\n./app/providers.tsx",
+        "warning: ../node_modules/@metamask/sdk/dist/browser/es/metamask-sdk.js\nModule not found: Can't resolve '@react-native-async-storage/async-storage' in 'D:\\AgentPay\\app\\node_modules\\@metamask\\sdk\\dist\\browser\\es'"
+      ],
+      "screenshot": "D:/AgentPay/app/docs/wallet-frontend-verify/mobile-decisions-d-demo.png",
+      "error": null,
+      "status": 200
+    },
+    {
+      "viewport": "tablet",
+      "route": "/",
+      "url": "http://localhost:3000/",
+      "ok": true,
+      "walletLabel": "Connect wallet",
+      "hasWalletEllipsis": false,
+      "overflow": false,
+      "connectWorks": null,
+      "menuWorks": null,
+      "console": [
+        "warning: ../node_modules/@metamask/sdk/dist/browser/es/metamask-sdk.js\nModule not found: Can't resolve '@react-native-async-storage/async-storage' in 'D:\\AgentPay\\app\\node_modules\\@metamask\\sdk\\dist\\browser\\es'"
+      ],
+      "screenshot": "D:/AgentPay/app/docs/wallet-frontend-verify/tablet-home.png",
+      "error": null,
+      "status": 200
+    },
+    {
+      "viewport": "tablet",
+      "route": "/how-it-works",
+      "url": "http://localhost:3000/how-it-works",
+      "ok": true,
+      "walletLabel": "Connect wallet",
+      "hasWalletEllipsis": false,
+      "overflow": false,
+      "connectWorks": null,
+      "menuWorks": null,
+      "console": [
+        "warning: ../node_modules/@metamask/sdk/dist/browser/es/metamask-sdk.js\nModule not found: Can't resolve '@react-native-async-storage/async-storage' in 'D:\\AgentPay\\app\\node_modules\\@metamask\\sdk\\dist\\browser\\es'\n\nImport trace for requested module:\n../node_modules/@metamask/sdk/dist/browser/es/metamask-sdk.js\n../node_modules/@wagmi/connectors/dist/esm/metaMask.js\n../node_modules/@wagmi/connectors/dist/esm/exports/index.js\n./lib/genlayer/wagmi.ts\n./lib/genlayer/WalletProvider.tsx\n./app/providers.tsx",
+        "warning: ../node_modules/@metamask/sdk/dist/browser/es/metamask-sdk.js\nModule not found: Can't resolve '@react-native-async-storage/async-storage' in 'D:\\AgentPay\\app\\node_modules\\@metamask\\sdk\\dist\\browser\\es'"
+      ],
+      "screenshot": "D:/AgentPay/app/docs/wallet-frontend-verify/tablet-how-it-works.png",
+      "error": null,
+      "status": 200
+    },
+    {
+      "viewport": "tablet",
+      "route": "/dashboard",
+      "url": "http://localhost:3000/dashboard",
+      "ok": true,
+      "walletLabel": "Connect wallet",
+      "hasWalletEllipsis": false,
+      "overflow": false,
+      "connectWorks": null,
+      "menuWorks": null,
+      "console": [
+        "warning: ../node_modules/@metamask/sdk/dist/browser/es/metamask-sdk.js\nModule not found: Can't resolve '@react-native-async-storage/async-storage' in 'D:\\AgentPay\\app\\node_modules\\@metamask\\sdk\\dist\\browser\\es'"
+      ],
+      "screenshot": "D:/AgentPay/app/docs/wallet-frontend-verify/tablet-dashboard.png",
+      "error": null,
+      "status": 200
+    },
+    {
+      "viewport": "tablet",
+      "route": "/explore",
+      "url": "http://localhost:3000/explore",
+      "ok": true,
+      "walletLabel": "Connect wallet",
+      "hasWalletEllipsis": false,
+      "overflow": false,
+      "connectWorks": null,
+      "menuWorks": null,
+      "console": [
+        "warning: ../node_modules/@metamask/sdk/dist/browser/es/metamask-sdk.js\nModule not found: Can't resolve '@react-native-async-storage/async-storage' in 'D:\\AgentPay\\app\\node_modules\\@metamask\\sdk\\dist\\browser\\es'"
+      ],
+      "screenshot": "D:/AgentPay/app/docs/wallet-frontend-verify/tablet-explore.png",
+      "error": null,
+      "status": 200
+    },
+    {
+      "viewport": "tablet",
+      "route": "/credits",
+      "url": "http://localhost:3000/credits",
+      "ok": true,
+      "walletLabel": "Connect wallet",
+      "hasWalletEllipsis": false,
+      "overflow": false,
+      "connectWorks": null,
+      "menuWorks": null,
+      "console": [
+        "warning: ../node_modules/@metamask/sdk/dist/browser/es/metamask-sdk.js\nModule not found: Can't resolve '@react-native-async-storage/async-storage' in 'D:\\AgentPay\\app\\node_modules\\@metamask\\sdk\\dist\\browser\\es'"
+      ],
+      "screenshot": "D:/AgentPay/app/docs/wallet-frontend-verify/tablet-credits.png",
+      "error": null,
+      "status": 200
+    },
+    {
+      "viewport": "tablet",
+      "route": "/mandates/new",
+      "url": "http://localhost:3000/mandates/new",
+      "ok": true,
+      "walletLabel": "Connect wallet",
+      "hasWalletEllipsis": false,
+      "overflow": false,
+      "connectWorks": null,
+      "menuWorks": null,
+      "console": [
+        "warning: ../node_modules/@metamask/sdk/dist/browser/es/metamask-sdk.js\nModule not found: Can't resolve '@react-native-async-storage/async-storage' in 'D:\\AgentPay\\app\\node_modules\\@metamask\\sdk\\dist\\browser\\es'"
+      ],
+      "screenshot": "D:/AgentPay/app/docs/wallet-frontend-verify/tablet-mandates-new.png",
+      "error": null,
+      "status": 200
+    },
+    {
+      "viewport": "tablet",
+      "route": "/invoices/new",
+      "url": "http://localhost:3000/invoices/new",
+      "ok": true,
+      "walletLabel": "Connect wallet",
+      "hasWalletEllipsis": false,
+      "overflow": false,
+      "connectWorks": null,
+      "menuWorks": null,
+      "console": [
+        "warning: ../node_modules/@metamask/sdk/dist/browser/es/metamask-sdk.js\nModule not found: Can't resolve '@react-native-async-storage/async-storage' in 'D:\\AgentPay\\app\\node_modules\\@metamask\\sdk\\dist\\browser\\es'"
+      ],
+      "screenshot": "D:/AgentPay/app/docs/wallet-frontend-verify/tablet-invoices-new.png",
+      "error": null,
+      "status": 200
+    },
+    {
+      "viewport": "tablet",
+      "route": "/requests/new",
+      "url": "http://localhost:3000/requests/new",
+      "ok": true,
+      "walletLabel": "Connect wallet",
+      "hasWalletEllipsis": false,
+      "overflow": false,
+      "connectWorks": null,
+      "menuWorks": null,
+      "console": [
+        "warning: ../node_modules/@metamask/sdk/dist/browser/es/metamask-sdk.js\nModule not found: Can't resolve '@react-native-async-storage/async-storage' in 'D:\\AgentPay\\app\\node_modules\\@metamask\\sdk\\dist\\browser\\es'"
+      ],
+      "screenshot": "D:/AgentPay/app/docs/wallet-frontend-verify/tablet-requests-new.png",
+      "error": null,
+      "status": 200
+    },
+    {
+      "viewport": "tablet",
+      "route": "/mandates/m-demo",
+      "url": "http://localhost:3000/mandates/m-demo",
+      "ok": true,
+      "walletLabel": "Connect wallet",
+      "hasWalletEllipsis": false,
+      "overflow": false,
+      "connectWorks": null,
+      "menuWorks": null,
+      "console": [
+        "warning: ../node_modules/@metamask/sdk/dist/browser/es/metamask-sdk.js\nModule not found: Can't resolve '@react-native-async-storage/async-storage' in 'D:\\AgentPay\\app\\node_modules\\@metamask\\sdk\\dist\\browser\\es'"
+      ],
+      "screenshot": "D:/AgentPay/app/docs/wallet-frontend-verify/tablet-mandates-m-demo.png",
+      "error": null,
+      "status": 200
+    },
+    {
+      "viewport": "tablet",
+      "route": "/invoices/i-demo",
+      "url": "http://localhost:3000/invoices/i-demo",
+      "ok": true,
+      "walletLabel": "Connect wallet",
+      "hasWalletEllipsis": false,
+      "overflow": false,
+      "connectWorks": null,
+      "menuWorks": null,
+      "console": [
+        "warning: ../node_modules/@metamask/sdk/dist/browser/es/metamask-sdk.js\nModule not found: Can't resolve '@react-native-async-storage/async-storage' in 'D:\\AgentPay\\app\\node_modules\\@metamask\\sdk\\dist\\browser\\es'"
+      ],
+      "screenshot": "D:/AgentPay/app/docs/wallet-frontend-verify/tablet-invoices-i-demo.png",
+      "error": null,
+      "status": 200
+    },
+    {
+      "viewport": "tablet",
+      "route": "/decisions/d-demo",
+      "url": "http://localhost:3000/decisions/d-demo",
+      "ok": true,
+      "walletLabel": "Connect wallet",
+      "hasWalletEllipsis": false,
+      "overflow": false,
+      "connectWorks": null,
+      "menuWorks": null,
+      "console": [
+        "warning: ../node_modules/@metamask/sdk/dist/browser/es/metamask-sdk.js\nModule not found: Can't resolve '@react-native-async-storage/async-storage' in 'D:\\AgentPay\\app\\node_modules\\@metamask\\sdk\\dist\\browser\\es'"
+      ],
+      "screenshot": "D:/AgentPay/app/docs/wallet-frontend-verify/tablet-decisions-d-demo.png",
+      "error": null,
+      "status": 200
+    },
+    {
+      "viewport": "desktop",
+      "route": "/",
+      "url": "http://localhost:3000/",
+      "ok": true,
+      "walletLabel": "Connect wallet",
+      "hasWalletEllipsis": false,
+      "overflow": false,
+      "connectWorks": true,
+      "menuWorks": null,
+      "console": [
+        "warning: ../node_modules/@metamask/sdk/dist/browser/es/metamask-sdk.js\nModule not found: Can't resolve '@react-native-async-storage/async-storage' in 'D:\\AgentPay\\app\\node_modules\\@metamask\\sdk\\dist\\browser\\es'"
+      ],
+      "screenshot": "D:/AgentPay/app/docs/wallet-frontend-verify/desktop-home.png",
+      "error": null,
+      "walletConnectRow": true,
+      "walletConnectUnconfigured": true,
+      "primaryCta": true,
+      "status": 200
+    },
+    {
+      "viewport": "desktop",
+      "route": "/how-it-works",
+      "url": "http://localhost:3000/how-it-works",
+      "ok": true,
+      "walletLabel": "Connect wallet",
+      "hasWalletEllipsis": false,
+      "overflow": false,
+      "connectWorks": null,
+      "menuWorks": null,
+      "console": [
+        "warning: ../node_modules/@metamask/sdk/dist/browser/es/metamask-sdk.js\nModule not found: Can't resolve '@react-native-async-storage/async-storage' in 'D:\\AgentPay\\app\\node_modules\\@metamask\\sdk\\dist\\browser\\es'"
+      ],
+      "screenshot": "D:/AgentPay/app/docs/wallet-frontend-verify/desktop-how-it-works.png",
+      "error": null,
+      "status": 200
+    },
+    {
+      "viewport": "desktop",
+      "route": "/dashboard",
+      "url": "http://localhost:3000/dashboard",
+      "ok": true,
+      "walletLabel": "Connect wallet",
+      "hasWalletEllipsis": false,
+      "overflow": false,
+      "connectWorks": null,
+      "menuWorks": null,
+      "console": [
+        "warning: ../node_modules/@metamask/sdk/dist/browser/es/metamask-sdk.js\nModule not found: Can't resolve '@react-native-async-storage/async-storage' in 'D:\\AgentPay\\app\\node_modules\\@metamask\\sdk\\dist\\browser\\es'"
+      ],
+      "screenshot": "D:/AgentPay/app/docs/wallet-frontend-verify/desktop-dashboard.png",
+      "error": null,
+      "status": 200
+    },
+    {
+      "viewport": "desktop",
+      "route": "/explore",
+      "url": "http://localhost:3000/explore",
+      "ok": true,
+      "walletLabel": "Connect wallet",
+      "hasWalletEllipsis": false,
+      "overflow": false,
+      "connectWorks": null,
+      "menuWorks": null,
+      "console": [
+        "warning: ../node_modules/@metamask/sdk/dist/browser/es/metamask-sdk.js\nModule not found: Can't resolve '@react-native-async-storage/async-storage' in 'D:\\AgentPay\\app\\node_modules\\@metamask\\sdk\\dist\\browser\\es'"
+      ],
+      "screenshot": "D:/AgentPay/app/docs/wallet-frontend-verify/desktop-explore.png",
+      "error": null,
+      "status": 200
+    },
+    {
+      "viewport": "desktop",
+      "route": "/credits",
+      "url": "http://localhost:3000/credits",
+      "ok": true,
+      "walletLabel": "Connect wallet",
+      "hasWalletEllipsis": false,
+      "overflow": false,
+      "connectWorks": null,
+      "menuWorks": null,
+      "console": [
+        "warning: ../node_modules/@metamask/sdk/dist/browser/es/metamask-sdk.js\nModule not found: Can't resolve '@react-native-async-storage/async-storage' in 'D:\\AgentPay\\app\\node_modules\\@metamask\\sdk\\dist\\browser\\es'"
+      ],
+      "screenshot": "D:/AgentPay/app/docs/wallet-frontend-verify/desktop-credits.png",
+      "error": null,
+      "status": 200
+    },
+    {
+      "viewport": "desktop",
+      "route": "/mandates/new",
+      "url": "http://localhost:3000/mandates/new",
+      "ok": true,
+      "walletLabel": "Connect wallet",
+      "hasWalletEllipsis": false,
+      "overflow": false,
+      "connectWorks": null,
+      "menuWorks": null,
+      "console": [
+        "warning: ../node_modules/@metamask/sdk/dist/browser/es/metamask-sdk.js\nModule not found: Can't resolve '@react-native-async-storage/async-storage' in 'D:\\AgentPay\\app\\node_modules\\@metamask\\sdk\\dist\\browser\\es'"
+      ],
+      "screenshot": "D:/AgentPay/app/docs/wallet-frontend-verify/desktop-mandates-new.png",
+      "error": null,
+      "status": 200
+    },
+    {
+      "viewport": "desktop",
+      "route": "/invoices/new",
+      "url": "http://localhost:3000/invoices/new",
+      "ok": true,
+      "walletLabel": "Connect wallet",
+      "hasWalletEllipsis": false,
+      "overflow": false,
+      "connectWorks": null,
+      "menuWorks": null,
+      "console": [
+        "warning: ../node_modules/@metamask/sdk/dist/browser/es/metamask-sdk.js\nModule not found: Can't resolve '@react-native-async-storage/async-storage' in 'D:\\AgentPay\\app\\node_modules\\@metamask\\sdk\\dist\\browser\\es'"
+      ],
+      "screenshot": "D:/AgentPay/app/docs/wallet-frontend-verify/desktop-invoices-new.png",
+      "error": null,
+      "status": 200
+    },
+    {
+      "viewport": "desktop",
+      "route": "/requests/new",
+      "url": "http://localhost:3000/requests/new",
+      "ok": true,
+      "walletLabel": "Connect wallet",
+      "hasWalletEllipsis": false,
+      "overflow": false,
+      "connectWorks": null,
+      "menuWorks": null,
+      "console": [
+        "warning: ../node_modules/@metamask/sdk/dist/browser/es/metamask-sdk.js\nModule not found: Can't resolve '@react-native-async-storage/async-storage' in 'D:\\AgentPay\\app\\node_modules\\@metamask\\sdk\\dist\\browser\\es'"
+      ],
+      "screenshot": "D:/AgentPay/app/docs/wallet-frontend-verify/desktop-requests-new.png",
+      "error": null,
+      "status": 200
+    },
+    {
+      "viewport": "desktop",
+      "route": "/mandates/m-demo",
+      "url": "http://localhost:3000/mandates/m-demo",
+      "ok": true,
+      "walletLabel": "Connect wallet",
+      "hasWalletEllipsis": false,
+      "overflow": false,
+      "connectWorks": null,
+      "menuWorks": null,
+      "console": [
+        "warning: ../node_modules/@metamask/sdk/dist/browser/es/metamask-sdk.js\nModule not found: Can't resolve '@react-native-async-storage/async-storage' in 'D:\\AgentPay\\app\\node_modules\\@metamask\\sdk\\dist\\browser\\es'"
+      ],
+      "screenshot": "D:/AgentPay/app/docs/wallet-frontend-verify/desktop-mandates-m-demo.png",
+      "error": null,
+      "status": 200
+    },
+    {
+      "viewport": "desktop",
+      "route": "/invoices/i-demo",
+      "url": "http://localhost:3000/invoices/i-demo",
+      "ok": true,
+      "walletLabel": "Connect wallet",
+      "hasWalletEllipsis": false,
+      "overflow": false,
+      "connectWorks": null,
+      "menuWorks": null,
+      "console": [
+        "warning: ../node_modules/@metamask/sdk/dist/browser/es/metamask-sdk.js\nModule not found: Can't resolve '@react-native-async-storage/async-storage' in 'D:\\AgentPay\\app\\node_modules\\@metamask\\sdk\\dist\\browser\\es'"
+      ],
+      "screenshot": "D:/AgentPay/app/docs/wallet-frontend-verify/desktop-invoices-i-demo.png",
+      "error": null,
+      "status": 200
+    },
+    {
+      "viewport": "desktop",
+      "route": "/decisions/d-demo",
+      "url": "http://localhost:3000/decisions/d-demo",
+      "ok": true,
+      "walletLabel": "Connect wallet",
+      "hasWalletEllipsis": false,
+      "overflow": false,
+      "connectWorks": null,
+      "menuWorks": null,
+      "console": [
+        "warning: ../node_modules/@metamask/sdk/dist/browser/es/metamask-sdk.js\nModule not found: Can't resolve '@react-native-async-storage/async-storage' in 'D:\\AgentPay\\app\\node_modules\\@metamask\\sdk\\dist\\browser\\es'"
+      ],
+      "screenshot": "D:/AgentPay/app/docs/wallet-frontend-verify/desktop-decisions-d-demo.png",
+      "error": null,
+      "status": 200
+    },
+    {
+      "viewport": "wide",
+      "route": "/",
+      "url": "http://localhost:3000/",
+      "ok": true,
+      "walletLabel": "Connect wallet",
+      "hasWalletEllipsis": false,
+      "overflow": false,
+      "connectWorks": null,
+      "menuWorks": null,
+      "console": [
+        "warning: ../node_modules/@metamask/sdk/dist/browser/es/metamask-sdk.js\nModule not found: Can't resolve '@react-native-async-storage/async-storage' in 'D:\\AgentPay\\app\\node_modules\\@metamask\\sdk\\dist\\browser\\es'"
+      ],
+      "screenshot": "D:/AgentPay/app/docs/wallet-frontend-verify/wide-home.png",
+      "error": null,
+      "status": 200
+    },
+    {
+      "viewport": "wide",
+      "route": "/how-it-works",
+      "url": "http://localhost:3000/how-it-works",
+      "ok": true,
+      "walletLabel": "Connect wallet",
+      "hasWalletEllipsis": false,
+      "overflow": false,
+      "connectWorks": null,
+      "menuWorks": null,
+      "console": [
+        "warning: ../node_modules/@metamask/sdk/dist/browser/es/metamask-sdk.js\nModule not found: Can't resolve '@react-native-async-storage/async-storage' in 'D:\\AgentPay\\app\\node_modules\\@metamask\\sdk\\dist\\browser\\es'"
+      ],
+      "screenshot": "D:/AgentPay/app/docs/wallet-frontend-verify/wide-how-it-works.png",
+      "error": null,
+      "status": 200
+    },
+    {
+      "viewport": "wide",
+      "route": "/dashboard",
+      "url": "http://localhost:3000/dashboard",
+      "ok": true,
+      "walletLabel": "Connect wallet",
+      "hasWalletEllipsis": false,
+      "overflow": false,
+      "connectWorks": null,
+      "menuWorks": null,
+      "console": [
+        "warning: ../node_modules/@metamask/sdk/dist/browser/es/metamask-sdk.js\nModule not found: Can't resolve '@react-native-async-storage/async-storage' in 'D:\\AgentPay\\app\\node_modules\\@metamask\\sdk\\dist\\browser\\es'"
+      ],
+      "screenshot": "D:/AgentPay/app/docs/wallet-frontend-verify/wide-dashboard.png",
+      "error": null,
+      "status": 200
+    },
+    {
+      "viewport": "wide",
+      "route": "/explore",
+      "url": "http://localhost:3000/explore",
+      "ok": true,
+      "walletLabel": "Connect wallet",
+      "hasWalletEllipsis": false,
+      "overflow": false,
+      "connectWorks": null,
+      "menuWorks": null,
+      "console": [
+        "warning: ../node_modules/@metamask/sdk/dist/browser/es/metamask-sdk.js\nModule not found: Can't resolve '@react-native-async-storage/async-storage' in 'D:\\AgentPay\\app\\node_modules\\@metamask\\sdk\\dist\\browser\\es'"
+      ],
+      "screenshot": "D:/AgentPay/app/docs/wallet-frontend-verify/wide-explore.png",
+      "error": null,
+      "status": 200
+    },
+    {
+      "viewport": "wide",
+      "route": "/credits",
+      "url": "http://localhost:3000/credits",
+      "ok": true,
+      "walletLabel": "Connect wallet",
+      "hasWalletEllipsis": false,
+      "overflow": false,
+      "connectWorks": null,
+      "menuWorks": null,
+      "console": [
+        "warning: ../node_modules/@metamask/sdk/dist/browser/es/metamask-sdk.js\nModule not found: Can't resolve '@react-native-async-storage/async-storage' in 'D:\\AgentPay\\app\\node_modules\\@metamask\\sdk\\dist\\browser\\es'"
+      ],
+      "screenshot": "D:/AgentPay/app/docs/wallet-frontend-verify/wide-credits.png",
+      "error": null,
+      "status": 200
+    },
+    {
+      "viewport": "wide",
+      "route": "/mandates/new",
+      "url": "http://localhost:3000/mandates/new",
+      "ok": true,
+      "walletLabel": "Connect wallet",
+      "hasWalletEllipsis": false,
+      "overflow": false,
+      "connectWorks": null,
+      "menuWorks": null,
+      "console": [
+        "warning: ../node_modules/@metamask/sdk/dist/browser/es/metamask-sdk.js\nModule not found: Can't resolve '@react-native-async-storage/async-storage' in 'D:\\AgentPay\\app\\node_modules\\@metamask\\sdk\\dist\\browser\\es'"
+      ],
+      "screenshot": "D:/AgentPay/app/docs/wallet-frontend-verify/wide-mandates-new.png",
+      "error": null,
+      "status": 200
+    },
+    {
+      "viewport": "wide",
+      "route": "/invoices/new",
+      "url": "http://localhost:3000/invoices/new",
+      "ok": true,
+      "walletLabel": "Connect wallet",
+      "hasWalletEllipsis": false,
+      "overflow": false,
+      "connectWorks": null,
+      "menuWorks": null,
+      "console": [
+        "warning: ../node_modules/@metamask/sdk/dist/browser/es/metamask-sdk.js\nModule not found: Can't resolve '@react-native-async-storage/async-storage' in 'D:\\AgentPay\\app\\node_modules\\@metamask\\sdk\\dist\\browser\\es'"
+      ],
+      "screenshot": "D:/AgentPay/app/docs/wallet-frontend-verify/wide-invoices-new.png",
+      "error": null,
+      "status": 200
+    },
+    {
+      "viewport": "wide",
+      "route": "/requests/new",
+      "url": "http://localhost:3000/requests/new",
+      "ok": true,
+      "walletLabel": "Connect wallet",
+      "hasWalletEllipsis": false,
+      "overflow": false,
+      "connectWorks": null,
+      "menuWorks": null,
+      "console": [
+        "warning: ../node_modules/@metamask/sdk/dist/browser/es/metamask-sdk.js\nModule not found: Can't resolve '@react-native-async-storage/async-storage' in 'D:\\AgentPay\\app\\node_modules\\@metamask\\sdk\\dist\\browser\\es'"
+      ],
+      "screenshot": "D:/AgentPay/app/docs/wallet-frontend-verify/wide-requests-new.png",
+      "error": null,
+      "status": 200
+    },
+    {
+      "viewport": "wide",
+      "route": "/mandates/m-demo",
+      "url": "http://localhost:3000/mandates/m-demo",
+      "ok": true,
+      "walletLabel": "Connect wallet",
+      "hasWalletEllipsis": false,
+      "overflow": false,
+      "connectWorks": null,
+      "menuWorks": null,
+      "console": [
+        "warning: ../node_modules/@metamask/sdk/dist/browser/es/metamask-sdk.js\nModule not found: Can't resolve '@react-native-async-storage/async-storage' in 'D:\\AgentPay\\app\\node_modules\\@metamask\\sdk\\dist\\browser\\es'"
+      ],
+      "screenshot": "D:/AgentPay/app/docs/wallet-frontend-verify/wide-mandates-m-demo.png",
+      "error": null,
+      "status": 200
+    },
+    {
+      "viewport": "wide",
+      "route": "/invoices/i-demo",
+      "url": "http://localhost:3000/invoices/i-demo",
+      "ok": true,
+      "walletLabel": "Connect wallet",
+      "hasWalletEllipsis": false,
+      "overflow": false,
+      "connectWorks": null,
+      "menuWorks": null,
+      "console": [
+        "warning: ../node_modules/@metamask/sdk/dist/browser/es/metamask-sdk.js\nModule not found: Can't resolve '@react-native-async-storage/async-storage' in 'D:\\AgentPay\\app\\node_modules\\@metamask\\sdk\\dist\\browser\\es'"
+      ],
+      "screenshot": "D:/AgentPay/app/docs/wallet-frontend-verify/wide-invoices-i-demo.png",
+      "error": null,
+      "status": 200
+    },
+    {
+      "viewport": "wide",
+      "route": "/decisions/d-demo",
+      "url": "http://localhost:3000/decisions/d-demo",
+      "ok": true,
+      "walletLabel": "Connect wallet",
+      "hasWalletEllipsis": false,
+      "overflow": false,
+      "connectWorks": null,
+      "menuWorks": null,
+      "console": [
+        "warning: ../node_modules/@metamask/sdk/dist/browser/es/metamask-sdk.js\nModule not found: Can't resolve '@react-native-async-storage/async-storage' in 'D:\\AgentPay\\app\\node_modules\\@metamask\\sdk\\dist\\browser\\es'"
+      ],
+      "screenshot": "D:/AgentPay/app/docs/wallet-frontend-verify/wide-decisions-d-demo.png",
+      "error": null,
+      "status": 200
+    }
+  ]
+}

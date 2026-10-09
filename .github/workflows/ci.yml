@@ -1,0 +1,36 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+env:
+  GENVM_VERSION: v0.6.0-rc8
+  GENVM_ALLOW_PRERELEASE: "1"
+
+jobs:
+  lint-contracts:
+    name: Lint Contracts
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r requirements.txt
+      - run: genvm-lint check contracts/agentpay.py --json
+      - run: genvm-lint check contracts/eoa_transfer_probe.py --json
+      - run: genvm-lint check contracts/settlement_probe.py --json
+
+  test-direct:
+    name: Direct Mode Tests
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r requirements.txt
+      - run: python -m pytest tests/direct/ -v

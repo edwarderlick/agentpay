@@ -1,0 +1,272 @@
+{
+  "case": "expired mandate",
+  "fixture": "0x066217cFDcC61DFf33b0957f19bC2e4E3fD87532",
+  "explorer": "https://explorer-studio-dev.genlayer.com/address/0x066217cFDcC61DFf33b0957f19bC2e4E3fD87532",
+  "ids": {
+    "mandate": "exp-m-1a119af263808",
+    "invoice": "exp-inv-1a119af263808",
+    "request": "exp-req-1a119af263808",
+    "late_invoice": "1a119af263808-late-inv"
+  },
+  "expiry": 1791432451,
+  "txs": {
+    "create": {
+      "label": "create_mandate",
+      "tx_id": "0x0aa181a6d1466f1da2a5972523ef029d8be2710b30a3278511b84970f4ad27c0",
+      "explorer": "https://explorer-studio-dev.genlayer.com/tx/0x0aa181a6d1466f1da2a5972523ef029d8be2710b30a3278511b84970f4ad27c0",
+      "status": null,
+      "execution": null,
+      "leader_execution": "SUCCESS",
+      "value_credited": true,
+      "messages": [],
+      "pending_transactions": [],
+      "triggered_transactions": [],
+      "lifecycle": {
+        "state": "finalized",
+        "outcome": "accepted"
+      },
+      "paid_fee_value": 189264600005176,
+      "primary_fee_spent": 78636250000823,
+      "total_refunded": 110628350004353,
+      "sender_fee_spent": 78636250000823
+    },
+    "invoice": {
+      "label": "issue_invoice",
+      "tx_id": "0x250b7c0f738d1d9fa0cb02444534e25b88cbd2a28ca6fb38660e99ea6d6d1adb",
+      "explorer": "https://explorer-studio-dev.genlayer.com/tx/0x250b7c0f738d1d9fa0cb02444534e25b88cbd2a28ca6fb38660e99ea6d6d1adb",
+      "status": null,
+      "execution": null,
+      "leader_execution": "SUCCESS",
+      "value_credited": false,
+      "messages": [],
+      "pending_transactions": [],
+      "triggered_transactions": [],
+      "lifecycle": {
+        "state": "finalized",
+        "outcome": "accepted"
+      },
+      "paid_fee_value": 189254400005176,
+      "primary_fee_spent": 78632000000823,
+      "total_refunded": 110622400004353,
+      "sender_fee_spent": 78632000000823
+    },
+    "expired_request": {
+      "label": "request_payment",
+      "tx_id": "0x5ef748abe77610079dbd1ccb27975e0264c39b42c97c3a19267f08a7e5a49baf",
+      "explorer": "https://explorer-studio-dev.genlayer.com/tx/0x5ef748abe77610079dbd1ccb27975e0264c39b42c97c3a19267f08a7e5a49baf",
+      "status": null,
+      "execution": null,
+      "leader_execution": "ERROR",
+      "value_credited": false,
+      "messages": [],
+      "pending_transactions": [],
+      "triggered_transactions": [],
+      "lifecycle": {
+        "state": "finalized",
+        "outcome": "accepted"
+      },
+      "paid_fee_value": 190650600005176,
+      "primary_fee_spent": 78628000000823,
+      "total_refunded": 112022600004353,
+      "sender_fee_spent": 78628000000823
+    },
+    "expired_issue": {
+      "label": "expired_issue_invoice",
+      "tx_id": "0x4d917b6807508e30f5f167e7590f720f0d04cb57da8fae3ba3a6fd38ca9ca970",
+      "explorer": "https://explorer-studio-dev.genlayer.com/tx/0x4d917b6807508e30f5f167e7590f720f0d04cb57da8fae3ba3a6fd38ca9ca970",
+      "status": null,
+      "execution": null,
+      "leader_execution": "ERROR",
+      "value_credited": false,
+      "messages": [],
+      "pending_transactions": [],
+      "triggered_transactions": [],
+      "lifecycle": {
+        "state": "finalized",
+        "outcome": "accepted"
+      },
+      "paid_fee_value": 189253800005176,
+      "primary_fee_spent": 78628000000823,
+      "total_refunded": 110625800004353,
+      "sender_fee_spent": 78628000000823
+    }
+  },
+  "mandate_after_wait": {
+    "agent": "0xd051a174097179B31e867Fcb3838e747E102537A",
+    "closed": false,
+    "expiry": 1791432451,
+    "id": "exp-m-1a119af263808",
+    "merchants": [
+      "0x4abCc7E6B6B36642Aa8EDC43e79F1f17F5741070"
+    ],
+    "owner": "0x61BF3719c845fCf594ED80Fd4B641572f9A7F312",
+    "per_payment_cap": 10000000000000000,
+    "purpose": "Permitted expenses: GPU cloud compute hours and LLM API inference tokens on listed providers. Prohibited: domain renewals, personal subscriptions, travel.",
+    "remaining_budget": 20000000000000000,
+    "status": "expired",
+    "title": "Short GPU",
+    "total_budget": 20000000000000000
+  },
+  "before": {
+    "fixture": "0x066217cFDcC61DFf33b0957f19bC2e4E3fD87532",
+    "mandate": {
+      "agent": "0xd051a174097179B31e867Fcb3838e747E102537A",
+      "closed": false,
+      "expiry": 1791432451,
+      "id": "exp-m-1a119af263808",
+      "merchants": [
+        "0x4abCc7E6B6B36642Aa8EDC43e79F1f17F5741070"
+      ],
+      "owner": "0x61BF3719c845fCf594ED80Fd4B641572f9A7F312",
+      "per_payment_cap": 10000000000000000,
+      "purpose": "Permitted expenses: GPU cloud compute hours and LLM API inference tokens on listed providers. Prohibited: domain renewals, personal subscriptions, travel.",
+      "remaining_budget": 20000000000000000,
+      "status": "expired",
+      "title": "Short GPU",
+      "total_budget": 20000000000000000
+    },
+    "credit": 0,
+    "withdrawn": 0,
+    "invoice": {
+      "amount": 10000000000000000,
+      "id": "exp-inv-1a119af263808",
+      "mandate_id": "exp-m-1a119af263808",
+      "merchant": "0x4abCc7E6B6B36642Aa8EDC43e79F1f17F5741070",
+      "purpose": "NVIDIA A100 GPU cloud hours for a transformer inference batch.",
+      "used": false
+    },
+    "request": {},
+    "accounting": {
+      "backed": 20000000000000000,
+      "contract_balance": 20000000000000000,
+      "total_credits": 0,
+      "total_remaining": 20000000000000000,
+      "uncommitted": 20000000000000000
+    },
+    "native": {
+      "contract": 20000000000000000,
+      "owner": 999848740423999986832,
+      "agent": 999999368042499993416,
+      "merchant": 999999370947749993181
+    },
+    "comparable": {
+      "remaining_budget": 20000000000000000,
+      "closed": false,
+      "status": "expired",
+      "credit": 0,
+      "withdrawn": 0,
+      "invoice_used": false,
+      "contract_native": 20000000000000000,
+      "total_remaining": 20000000000000000,
+      "total_credits": 0
+    }
+  },
+  "after_request": {
+    "fixture": "0x066217cFDcC61DFf33b0957f19bC2e4E3fD87532",
+    "mandate": {
+      "agent": "0xd051a174097179B31e867Fcb3838e747E102537A",
+      "closed": false,
+      "expiry": 1791432451,
+      "id": "exp-m-1a119af263808",
+      "merchants": [
+        "0x4abCc7E6B6B36642Aa8EDC43e79F1f17F5741070"
+      ],
+      "owner": "0x61BF3719c845fCf594ED80Fd4B641572f9A7F312",
+      "per_payment_cap": 10000000000000000,
+      "purpose": "Permitted expenses: GPU cloud compute hours and LLM API inference tokens on listed providers. Prohibited: domain renewals, personal subscriptions, travel.",
+      "remaining_budget": 20000000000000000,
+      "status": "expired",
+      "title": "Short GPU",
+      "total_budget": 20000000000000000
+    },
+    "credit": 0,
+    "withdrawn": 0,
+    "invoice": {
+      "amount": 10000000000000000,
+      "id": "exp-inv-1a119af263808",
+      "mandate_id": "exp-m-1a119af263808",
+      "merchant": "0x4abCc7E6B6B36642Aa8EDC43e79F1f17F5741070",
+      "purpose": "NVIDIA A100 GPU cloud hours for a transformer inference batch.",
+      "used": false
+    },
+    "request": {},
+    "accounting": {
+      "backed": 20000000000000000,
+      "contract_balance": 20000000000000000,
+      "total_credits": 0,
+      "total_remaining": 20000000000000000,
+      "uncommitted": 20000000000000000
+    },
+    "native": {
+      "contract": 20000000000000000,
+      "owner": 999848740423999986832,
+      "agent": 999999289414499992593,
+      "merchant": 999999370947749993181
+    },
+    "comparable": {
+      "remaining_budget": 20000000000000000,
+      "closed": false,
+      "status": "expired",
+      "credit": 0,
+      "withdrawn": 0,
+      "invoice_used": false,
+      "contract_native": 20000000000000000,
+      "total_remaining": 20000000000000000,
+      "total_credits": 0
+    }
+  },
+  "after_issue": {
+    "fixture": "0x066217cFDcC61DFf33b0957f19bC2e4E3fD87532",
+    "mandate": {
+      "agent": "0xd051a174097179B31e867Fcb3838e747E102537A",
+      "closed": false,
+      "expiry": 1791432451,
+      "id": "exp-m-1a119af263808",
+      "merchants": [
+        "0x4abCc7E6B6B36642Aa8EDC43e79F1f17F5741070"
+      ],
+      "owner": "0x61BF3719c845fCf594ED80Fd4B641572f9A7F312",
+      "per_payment_cap": 10000000000000000,
+      "purpose": "Permitted expenses: GPU cloud compute hours and LLM API inference tokens on listed providers. Prohibited: domain renewals, personal subscriptions, travel.",
+      "remaining_budget": 20000000000000000,
+      "status": "expired",
+      "title": "Short GPU",
+      "total_budget": 20000000000000000
+    },
+    "credit": 0,
+    "withdrawn": 0,
+    "invoice": {
+      "amount": 10000000000000000,
+      "id": "exp-inv-1a119af263808",
+      "mandate_id": "exp-m-1a119af263808",
+      "merchant": "0x4abCc7E6B6B36642Aa8EDC43e79F1f17F5741070",
+      "purpose": "NVIDIA A100 GPU cloud hours for a transformer inference batch.",
+      "used": false
+    },
+    "request": {},
+    "accounting": {
+      "backed": 20000000000000000,
+      "contract_balance": 20000000000000000,
+      "total_credits": 0,
+      "total_remaining": 20000000000000000,
+      "uncommitted": 20000000000000000
+    },
+    "native": {
+      "contract": 20000000000000000,
+      "owner": 999848740423999986832,
+      "agent": 999999289414499992593,
+      "merchant": 999999292319749992358
+    },
+    "comparable": {
+      "remaining_budget": 20000000000000000,
+      "closed": false,
+      "status": "expired",
+      "credit": 0,
+      "withdrawn": 0,
+      "invoice_used": false,
+      "contract_native": 20000000000000000,
+      "total_remaining": 20000000000000000,
+      "total_credits": 0
+    }
+  }
+}

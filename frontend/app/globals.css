@@ -1,0 +1,137 @@
+@import "tailwindcss";
+
+:root {
+  --background: #fdf9f0;
+  --foreground: #1c1c17;
+  --surface: #fdf9f0;
+  --surface-low: #f7f3ea;
+  --surface-container: #f1eee5;
+  --surface-high: #ece8df;
+  --surface-highest: #e6e2d9;
+  --on-surface: #1c1c17;
+  --on-surface-variant: #424843;
+  --outline: #737973;
+  --outline-variant: #c2c8c2;
+  --primary: #02150a;
+  --primary-container: #152a1e;
+  --on-primary: #ffffff;
+  --on-primary-container: #7b9282;
+  --secondary: #a63500;
+  --secondary-container: #d04400;
+  --on-secondary: #ffffff;
+  --tertiary-fixed: #cfef74;
+  --tertiary-fixed-dim: #b4d25b;
+  --error: #ba1a1a;
+  --error-container: #ffdad6;
+  --pastel-rose: #ffa6c9;
+  --pastel-lime: #d4f478;
+  --pastel-canary: #fed766;
+  --pastel-cyan: #7de2d1;
+  --card: #ffffff;
+  --card-foreground: #1c1c17;
+  --popover: #ffffff;
+  --popover-foreground: #1c1c17;
+  --muted: #f1eee5;
+  --muted-foreground: #424843;
+  --accent: #d04400;
+  --accent-foreground: #fffbff;
+  --destructive: #ba1a1a;
+  --destructive-foreground: #ffffff;
+  --border: #e6e2d9;
+  --input: #f1eee5;
+  --ring: #02150a;
+  --radius: 0px;
+  --font-display: var(--font-space-grotesk), "Space Grotesk", sans-serif;
+  --font-body: var(--font-hanken), "Hanken Grotesk", sans-serif;
+  --font-mono: var(--font-jetbrains), "JetBrains Mono", ui-monospace, monospace;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--on-primary);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--on-secondary);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --radius-sm: 0px;
+  --radius-md: 0px;
+  --radius-lg: 0px;
+  --radius-xl: 0px;
+  --font-display: var(--font-display);
+  --font-body: var(--font-body);
+  --font-mono: var(--font-mono);
+}
+
+html {
+  min-height: 100%;
+  background: var(--background);
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  overflow-x: hidden;
+  background: var(--background);
+  color: var(--on-surface);
+  font-family: var(--font-body);
+  font-feature-settings: "rlig" 1, "calt" 1;
+}
+
+:focus-visible {
+  outline: 2px solid var(--primary);
+  outline-offset: 2px;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-display);
+  letter-spacing: -0.03em;
+}
+
+button, input, textarea, select {
+  font: inherit;
+}
+
+::selection {
+  background: #d04400;
+  color: #fffbff;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+.hairline {
+  border: 1px solid var(--surface-highest);
+}
+
+.editorial-grid {
+  background-image: linear-gradient(#e5e0d4 1px, transparent 1px),
+    linear-gradient(90deg, #e5e0d4 1px, transparent 1px);
+  background-size: 48px 48px;
+}
+
+.focus-ring:focus-visible {
+  outline: 2px solid var(--primary);
+  outline-offset: 2px;
+}

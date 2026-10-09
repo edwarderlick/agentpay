@@ -1,0 +1,20 @@
+networks:
+  default: localnet
+
+  localnet:
+    url: "http://127.0.0.1:4000/api"
+
+  studio_devnet:
+    url: "https://studio-next.genlayer.com/api"
+    id: 61997
+    chain_type: studio_devnet
+    default_wait_interval: 4000
+    default_wait_retries: 80
+
+  # Studionet is chain 61999. Do not deploy AgentPay here.
+  studionet: {}
+
+paths:
+  contracts: "contracts"
+
+environment: .env

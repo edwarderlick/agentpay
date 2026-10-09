@@ -1,0 +1,144 @@
+{
+  "case": "unauthorized close",
+  "fixture": "0x924A9EF3974f87e86bb4B241CB328d6787CFcF50",
+  "explorer": "https://explorer-studio-dev.genlayer.com/address/0x924A9EF3974f87e86bb4B241CB328d6787CFcF50",
+  "ids": {
+    "mandate": "uclose-m-1a119b5183409"
+  },
+  "txs": {
+    "create": {
+      "label": "create_mandate",
+      "tx_id": "0xbfb8b2fee40325c16ff76ee207d2ea9117e3b061d684363009c19a1d0b06086e",
+      "explorer": "https://explorer-studio-dev.genlayer.com/tx/0xbfb8b2fee40325c16ff76ee207d2ea9117e3b061d684363009c19a1d0b06086e",
+      "status": null,
+      "execution": null,
+      "leader_execution": "SUCCESS",
+      "value_credited": true,
+      "messages": [],
+      "pending_transactions": [],
+      "triggered_transactions": [],
+      "lifecycle": {
+        "state": "finalized",
+        "outcome": "accepted"
+      },
+      "paid_fee_value": 189264600005176,
+      "primary_fee_spent": 78636250000823,
+      "total_refunded": 110628350004353,
+      "sender_fee_spent": 78636250000823
+    },
+    "unauthorized_close": {
+      "label": "unauthorized_close",
+      "tx_id": "0x28f19b3326fc31aae3b48e9cad19d0bbea2bb1db882979a0a18e31016903df66",
+      "explorer": "https://explorer-studio-dev.genlayer.com/tx/0x28f19b3326fc31aae3b48e9cad19d0bbea2bb1db882979a0a18e31016903df66",
+      "status": null,
+      "execution": null,
+      "leader_execution": "ERROR",
+      "value_credited": false,
+      "messages": [],
+      "pending_transactions": [],
+      "triggered_transactions": [],
+      "lifecycle": {
+        "state": "finalized",
+        "outcome": "accepted"
+      },
+      "paid_fee_value": "50000000000005176",
+      "primary_fee_spent": 78628000000823,
+      "total_refunded": "49921372000004353",
+      "sender_fee_spent": 78628000000823
+    }
+  },
+  "before": {
+    "fixture": "0x924A9EF3974f87e86bb4B241CB328d6787CFcF50",
+    "mandate": {
+      "agent": "0xd051a174097179B31e867Fcb3838e747E102537A",
+      "closed": false,
+      "expiry": 4102444800,
+      "id": "uclose-m-1a119b5183409",
+      "merchants": [
+        "0x4abCc7E6B6B36642Aa8EDC43e79F1f17F5741070"
+      ],
+      "owner": "0x61BF3719c845fCf594ED80Fd4B641572f9A7F312",
+      "per_payment_cap": 10000000000000000,
+      "purpose": "Permitted expenses: GPU cloud compute hours and LLM API inference tokens on listed providers. Prohibited: domain renewals, personal subscriptions, travel.",
+      "remaining_budget": 20000000000000000,
+      "status": "active",
+      "title": "GPU Q3",
+      "total_budget": 20000000000000000
+    },
+    "credit": 0,
+    "withdrawn": 0,
+    "invoice": {},
+    "request": {},
+    "accounting": {
+      "backed": 20000000000000000,
+      "contract_balance": 20000000000000000,
+      "total_credits": 0,
+      "total_remaining": 20000000000000000,
+      "uncommitted": 20000000000000000
+    },
+    "native": {
+      "contract": 20000000000000000,
+      "owner": 999828582976999985186,
+      "agent": 999999289414499992593,
+      "merchant": 999999292319749992358
+    },
+    "comparable": {
+      "remaining_budget": 20000000000000000,
+      "closed": false,
+      "status": "active",
+      "credit": 0,
+      "withdrawn": 0,
+      "invoice_used": null,
+      "contract_native": 20000000000000000,
+      "total_remaining": 20000000000000000,
+      "total_credits": 0
+    }
+  },
+  "after": {
+    "fixture": "0x924A9EF3974f87e86bb4B241CB328d6787CFcF50",
+    "mandate": {
+      "agent": "0xd051a174097179B31e867Fcb3838e747E102537A",
+      "closed": false,
+      "expiry": 4102444800,
+      "id": "uclose-m-1a119b5183409",
+      "merchants": [
+        "0x4abCc7E6B6B36642Aa8EDC43e79F1f17F5741070"
+      ],
+      "owner": "0x61BF3719c845fCf594ED80Fd4B641572f9A7F312",
+      "per_payment_cap": 10000000000000000,
+      "purpose": "Permitted expenses: GPU cloud compute hours and LLM API inference tokens on listed providers. Prohibited: domain renewals, personal subscriptions, travel.",
+      "remaining_budget": 20000000000000000,
+      "status": "active",
+      "title": "GPU Q3",
+      "total_budget": 20000000000000000
+    },
+    "credit": 0,
+    "withdrawn": 0,
+    "invoice": {},
+    "request": {},
+    "accounting": {
+      "backed": 20000000000000000,
+      "contract_balance": 20000000000000000,
+      "total_credits": 0,
+      "total_remaining": 20000000000000000,
+      "uncommitted": 20000000000000000
+    },
+    "native": {
+      "contract": 20000000000000000,
+      "owner": 999828582976999985186,
+      "agent": 999999210786499991770,
+      "merchant": 999999292319749992358
+    },
+    "comparable": {
+      "remaining_budget": 20000000000000000,
+      "closed": false,
+      "status": "active",
+      "credit": 0,
+      "withdrawn": 0,
+      "invoice_used": null,
+      "contract_native": 20000000000000000,
+      "total_remaining": 20000000000000000,
+      "total_credits": 0
+    }
+  }
+}

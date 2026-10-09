@@ -1,0 +1,50 @@
+{
+  "version": 1,
+  "network": "studio_devnet",
+  "measuredAt": "2026-10-07T09:03:26Z",
+  "chainId": 61997,
+  "deploy": {
+    "leaderTimeunitsAllocation": "125",
+    "validatorTimeunitsAllocation": "250",
+    "executionBudgetPerRound": "98513437500000",
+    "totalMessageFees": "0",
+    "rotationsPerRound": "1"
+  },
+  "methods": {
+    "close_mandate": {
+      "leaderTimeunitsAllocation": "125",
+      "validatorTimeunitsAllocation": "250",
+      "executionBudgetPerRound": "157885312500000",
+      "totalMessageFees": "156250000000000",
+      "rotationsPerRound": "1"
+    },
+    "create_mandate": {
+      "leaderTimeunitsAllocation": "125",
+      "validatorTimeunitsAllocation": "250",
+      "executionBudgetPerRound": "98295312500000",
+      "totalMessageFees": "0",
+      "rotationsPerRound": "1"
+    },
+    "issue_invoice": {
+      "leaderTimeunitsAllocation": "125",
+      "validatorTimeunitsAllocation": "250",
+      "executionBudgetPerRound": "98290000000000",
+      "totalMessageFees": "0",
+      "rotationsPerRound": "1"
+    },
+    "request_payment": {
+      "leaderTimeunitsAllocation": "125",
+      "validatorTimeunitsAllocation": "250",
+      "executionBudgetPerRound": "99167500000000",
+      "totalMessageFees": "0",
+      "rotationsPerRound": "1"
+    },
+    "withdraw_credit": {
+      "leaderTimeunitsAllocation": "125",
+      "validatorTimeunitsAllocation": "250",
+      "executionBudgetPerRound": "157882812500000",
+      "totalMessageFees": "156250000000000",
+      "rotationsPerRound": "1"
+    }
+  }
+}

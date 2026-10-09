@@ -1,0 +1,549 @@
+{
+  "case": "page-two discovery with more than 20 records",
+  "fixture": "0x44a5da880578D26dD352066F6657B8653F0C83aD",
+  "explorer": "https://explorer-studio-dev.genlayer.com/address/0x44a5da880578D26dD352066F6657B8653F0C83aD",
+  "ids": {
+    "mandate": "page-m-1a11663d20201",
+    "invoices": [
+      "1a11663d20201-p2-00",
+      "1a11663d20201-p2-01",
+      "1a11663d20201-p2-02",
+      "1a11663d20201-p2-03",
+      "1a11663d20201-p2-04",
+      "1a11663d20201-p2-05",
+      "1a11663d20201-p2-06",
+      "1a11663d20201-p2-07",
+      "1a11663d20201-p2-08",
+      "1a11663d20201-p2-09",
+      "1a11663d20201-p2-10",
+      "1a11663d20201-p2-11",
+      "1a11663d20201-p2-12",
+      "1a11663d20201-p2-13",
+      "1a11663d20201-p2-14",
+      "1a11663d20201-p2-15",
+      "1a11663d20201-p2-16",
+      "1a11663d20201-p2-17",
+      "1a11663d20201-p2-18",
+      "1a11663d20201-p2-19",
+      "1a11663d20201-p2-20"
+    ]
+  },
+  "txs": {
+    "create": {
+      "label": "create_mandate",
+      "tx_id": "0x909a83addb16945cf7ccaf7b599e2c839ec6cedcf0778cd1ca6444260e7593d1",
+      "explorer": "https://explorer-studio-dev.genlayer.com/tx/0x909a83addb16945cf7ccaf7b599e2c839ec6cedcf0778cd1ca6444260e7593d1",
+      "status": null,
+      "execution": null,
+      "leader_execution": "SUCCESS",
+      "value_credited": true,
+      "messages": [],
+      "pending_transactions": [],
+      "triggered_transactions": [],
+      "lifecycle": {
+        "state": "finalized",
+        "outcome": "accepted"
+      },
+      "paid_fee_value": 189264600005176,
+      "primary_fee_spent": 78636250000823,
+      "total_refunded": 110628350004353,
+      "sender_fee_spent": 78636250000823
+    },
+    "invoices": [
+      {
+        "label": "issue_invoice",
+        "tx_id": "0x2761b20462d6f4e69454c78788238570e17aede58ed4c5aa2d80b6f413a7b2b5",
+        "explorer": "https://explorer-studio-dev.genlayer.com/tx/0x2761b20462d6f4e69454c78788238570e17aede58ed4c5aa2d80b6f413a7b2b5",
+        "status": null,
+        "execution": null,
+        "leader_execution": "SUCCESS",
+        "value_credited": false,
+        "messages": [],
+        "pending_transactions": [],
+        "triggered_transactions": [],
+        "lifecycle": {
+          "state": "finalized",
+          "outcome": "accepted"
+        },
+        "paid_fee_value": 189254400005176,
+        "primary_fee_spent": 78632000000823,
+        "total_refunded": 110622400004353,
+        "sender_fee_spent": 78632000000823
+      },
+      {
+        "label": "issue_invoice",
+        "tx_id": "0xd62b2a955c049f1f8b2faa33c3bf3295192746e26cb2fed4e81455256a6d2eaa",
+        "explorer": "https://explorer-studio-dev.genlayer.com/tx/0xd62b2a955c049f1f8b2faa33c3bf3295192746e26cb2fed4e81455256a6d2eaa",
+        "status": null,
+        "execution": null,
+        "leader_execution": "SUCCESS",
+        "value_credited": false,
+        "messages": [],
+        "pending_transactions": [],
+        "triggered_transactions": [],
+        "lifecycle": {
+          "state": "finalized",
+          "outcome": "accepted"
+        },
+        "paid_fee_value": 189253800005176,
+        "primary_fee_spent": 78631750000823,
+        "total_refunded": 110622050004353,
+        "sender_fee_spent": 78631750000823
+      },
+      {
+        "label": "issue_invoice",
+        "tx_id": "0xcb215054707512a8f09e2461e5f8766230a304bf88c6f150ace5ebf9a4ec24eb",
+        "explorer": "https://explorer-studio-dev.genlayer.com/tx/0xcb215054707512a8f09e2461e5f8766230a304bf88c6f150ace5ebf9a4ec24eb",
+        "status": null,
+        "execution": null,
+        "leader_execution": "SUCCESS",
+        "value_credited": false,
+        "messages": [],
+        "pending_transactions": [],
+        "triggered_transactions": [],
+        "lifecycle": {
+          "state": "finalized",
+          "outcome": "accepted"
+        },
+        "paid_fee_value": 189256200005176,
+        "primary_fee_spent": 78632750000823,
+        "total_refunded": 110623450004353,
+        "sender_fee_spent": 78632750000823
+      },
+      {
+        "label": "issue_invoice",
+        "tx_id": "0x1a1947334fde0b09ef4c345e828755169352a97408cc4776930b80eeb9cd75b4",
+        "explorer": "https://explorer-studio-dev.genlayer.com/tx/0x1a1947334fde0b09ef4c345e828755169352a97408cc4776930b80eeb9cd75b4",
+        "status": null,
+        "execution": null,
+        "leader_execution": "SUCCESS",
+        "value_credited": false,
+        "messages": [],
+        "pending_transactions": [],
+        "triggered_transactions": [],
+        "lifecycle": {
+          "state": "finalized",
+          "outcome": "accepted"
+        },
+        "paid_fee_value": 189255600005176,
+        "primary_fee_spent": 78632500000823,
+        "total_refunded": 110623100004353,
+        "sender_fee_spent": 78632500000823
+      },
+      {
+        "label": "issue_invoice",
+        "tx_id": "0xe3fed4989858628bad18698534088b5a162e5ac701b4c1d2b82862fc05cc4056",
+        "explorer": "https://explorer-studio-dev.genlayer.com/tx/0xe3fed4989858628bad18698534088b5a162e5ac701b4c1d2b82862fc05cc4056",
+        "status": null,
+        "execution": null,
+        "leader_execution": "SUCCESS",
+        "value_credited": false,
+        "messages": [],
+        "pending_transactions": [],
+        "triggered_transactions": [],
+        "lifecycle": {
+          "state": "finalized",
+          "outcome": "accepted"
+        },
+        "paid_fee_value": 189258000005176,
+        "primary_fee_spent": 78633500000823,
+        "total_refunded": 110624500004353,
+        "sender_fee_spent": 78633500000823
+      },
+      {
+        "label": "issue_invoice",
+        "tx_id": "0x90916aa6a59a89afeaa829e4e27f0c2d9f977dd683b06bb63e1e944623c46d51",
+        "explorer": "https://explorer-studio-dev.genlayer.com/tx/0x90916aa6a59a89afeaa829e4e27f0c2d9f977dd683b06bb63e1e944623c46d51",
+        "status": null,
+        "execution": null,
+        "leader_execution": "SUCCESS",
+        "value_credited": false,
+        "messages": [],
+        "pending_transactions": [],
+        "triggered_transactions": [],
+        "lifecycle": {
+          "state": "finalized",
+          "outcome": "accepted"
+        },
+        "paid_fee_value": 189258600005176,
+        "primary_fee_spent": 78633750000823,
+        "total_refunded": 110624850004353,
+        "sender_fee_spent": 78633750000823
+      },
+      {
+        "label": "issue_invoice",
+        "tx_id": "0xa59af6b641d138c05c39d64b2d851b42fe076cdc1f25833d96662eba7cf683c7",
+        "explorer": "https://explorer-studio-dev.genlayer.com/tx/0xa59af6b641d138c05c39d64b2d851b42fe076cdc1f25833d96662eba7cf683c7",
+        "status": null,
+        "execution": null,
+        "leader_execution": "SUCCESS",
+        "value_credited": false,
+        "messages": [],
+        "pending_transactions": [],
+        "triggered_transactions": [],
+        "lifecycle": {
+          "state": "finalized",
+          "outcome": "accepted"
+        },
+        "paid_fee_value": 189260400005176,
+        "primary_fee_spent": 78634500000823,
+        "total_refunded": 110625900004353,
+        "sender_fee_spent": 78634500000823
+      },
+      {
+        "label": "issue_invoice",
+        "tx_id": "0xdb559338b5b829041ddba5615c29f888df01d8ab1280d8e190e16e06bae07558",
+        "explorer": "https://explorer-studio-dev.genlayer.com/tx/0xdb559338b5b829041ddba5615c29f888df01d8ab1280d8e190e16e06bae07558",
+        "status": null,
+        "execution": null,
+        "leader_execution": "SUCCESS",
+        "value_credited": false,
+        "messages": [],
+        "pending_transactions": [],
+        "triggered_transactions": [],
+        "lifecycle": {
+          "state": "finalized",
+          "outcome": "accepted"
+        },
+        "paid_fee_value": 189260400005176,
+        "primary_fee_spent": 78634500000823,
+        "total_refunded": 110625900004353,
+        "sender_fee_spent": 78634500000823
+      },
+      {
+        "label": "issue_invoice",
+        "tx_id": "0x45f86546398cc08dfdd4883e2a9b8901fa5abfc45704bb27a3ab2ce038f7eb11",
+        "explorer": "https://explorer-studio-dev.genlayer.com/tx/0x45f86546398cc08dfdd4883e2a9b8901fa5abfc45704bb27a3ab2ce038f7eb11",
+        "status": null,
+        "execution": null,
+        "leader_execution": "SUCCESS",
+        "value_credited": false,
+        "messages": [],
+        "pending_transactions": [],
+        "triggered_transactions": [],
+        "lifecycle": {
+          "state": "finalized",
+          "outcome": "accepted"
+        },
+        "paid_fee_value": 189261600005176,
+        "primary_fee_spent": 78635000000823,
+        "total_refunded": 110626600004353,
+        "sender_fee_spent": 78635000000823
+      },
+      {
+        "label": "issue_invoice",
+        "tx_id": "0x3f0f132a8aa28848ef535e13fcfdd9f7c684af02724598bb2894dc42d4f3d647",
+        "explorer": "https://explorer-studio-dev.genlayer.com/tx/0x3f0f132a8aa28848ef535e13fcfdd9f7c684af02724598bb2894dc42d4f3d647",
+        "status": null,
+        "execution": null,
+        "leader_execution": "SUCCESS",
+        "value_credited": false,
+        "messages": [],
+        "pending_transactions": [],
+        "triggered_transactions": [],
+        "lifecycle": {
+          "state": "finalized",
+          "outcome": "accepted"
+        },
+        "paid_fee_value": 189263400005176,
+        "primary_fee_spent": 78635750000823,
+        "total_refunded": 110627650004353,
+        "sender_fee_spent": 78635750000823
+      },
+      {
+        "label": "issue_invoice",
+        "tx_id": "0xb3a621675ab33ae4432b191c0e2f99ee8df2aeecd60b8fdbc8043d5371d211f5",
+        "explorer": "https://explorer-studio-dev.genlayer.com/tx/0xb3a621675ab33ae4432b191c0e2f99ee8df2aeecd60b8fdbc8043d5371d211f5",
+        "status": null,
+        "execution": null,
+        "leader_execution": "SUCCESS",
+        "value_credited": false,
+        "messages": [],
+        "pending_transactions": [],
+        "triggered_transactions": [],
+        "lifecycle": {
+          "state": "finalized",
+          "outcome": "accepted"
+        },
+        "paid_fee_value": 189262200005176,
+        "primary_fee_spent": 78635250000823,
+        "total_refunded": 110626950004353,
+        "sender_fee_spent": 78635250000823
+      },
+      {
+        "label": "issue_invoice",
+        "tx_id": "0x9c9eff13ea49a800d108a7e4dd39a0e4d2f890233559e378cf98ca087abf5200",
+        "explorer": "https://explorer-studio-dev.genlayer.com/tx/0x9c9eff13ea49a800d108a7e4dd39a0e4d2f890233559e378cf98ca087abf5200",
+        "status": null,
+        "execution": null,
+        "leader_execution": "SUCCESS",
+        "value_credited": false,
+        "messages": [],
+        "pending_transactions": [],
+        "triggered_transactions": [],
+        "lifecycle": {
+          "state": "finalized",
+          "outcome": "accepted"
+        },
+        "paid_fee_value": 189264600005176,
+        "primary_fee_spent": 78636250000823,
+        "total_refunded": 110628350004353,
+        "sender_fee_spent": 78636250000823
+      },
+      {
+        "label": "issue_invoice",
+        "tx_id": "0x760912c6074642b7582dc6f773c75f1a364b61bab0a90dab59291472aa63ebb1",
+        "explorer": "https://explorer-studio-dev.genlayer.com/tx/0x760912c6074642b7582dc6f773c75f1a364b61bab0a90dab59291472aa63ebb1",
+        "status": null,
+        "execution": null,
+        "leader_execution": "SUCCESS",
+        "value_credited": false,
+        "messages": [],
+        "pending_transactions": [],
+        "triggered_transactions": [],
+        "lifecycle": {
+          "state": "finalized",
+          "outcome": "accepted"
+        },
+        "paid_fee_value": 189265200005176,
+        "primary_fee_spent": 78636500000823,
+        "total_refunded": 110628700004353,
+        "sender_fee_spent": 78636500000823
+      },
+      {
+        "label": "issue_invoice",
+        "tx_id": "0xed68e9e45c814f32828368e41f3e54b7defe5a9427914b7a4fc13e998e2231e5",
+        "explorer": "https://explorer-studio-dev.genlayer.com/tx/0xed68e9e45c814f32828368e41f3e54b7defe5a9427914b7a4fc13e998e2231e5",
+        "status": null,
+        "execution": null,
+        "leader_execution": "SUCCESS",
+        "value_credited": false,
+        "messages": [],
+        "pending_transactions": [],
+        "triggered_transactions": [],
+        "lifecycle": {
+          "state": "finalized",
+          "outcome": "accepted"
+        },
+        "paid_fee_value": 189267600005176,
+        "primary_fee_spent": 78637500000823,
+        "total_refunded": 110630100004353,
+        "sender_fee_spent": 78637500000823
+      },
+      {
+        "label": "issue_invoice",
+        "tx_id": "0x75a291aebe21267ece856b7b83b015667597c954819f082bc9337fc543656aee",
+        "explorer": "https://explorer-studio-dev.genlayer.com/tx/0x75a291aebe21267ece856b7b83b015667597c954819f082bc9337fc543656aee",
+        "status": null,
+        "execution": null,
+        "leader_execution": "SUCCESS",
+        "value_credited": false,
+        "messages": [],
+        "pending_transactions": [],
+        "triggered_transactions": [],
+        "lifecycle": {
+          "state": "finalized",
+          "outcome": "accepted"
+        },
+        "paid_fee_value": 189266400005176,
+        "primary_fee_spent": 78637000000823,
+        "total_refunded": 110629400004353,
+        "sender_fee_spent": 78637000000823
+      },
+      {
+        "label": "issue_invoice",
+        "tx_id": "0xe9b53c4f4fe460d0c4291dcd9f9fac1f7e0af361fabf1d07a8603677fb19eec4",
+        "explorer": "https://explorer-studio-dev.genlayer.com/tx/0xe9b53c4f4fe460d0c4291dcd9f9fac1f7e0af361fabf1d07a8603677fb19eec4",
+        "status": null,
+        "execution": null,
+        "leader_execution": "SUCCESS",
+        "value_credited": false,
+        "messages": [],
+        "pending_transactions": [],
+        "triggered_transactions": [],
+        "lifecycle": {
+          "state": "finalized",
+          "outcome": "accepted"
+        },
+        "paid_fee_value": 189267600005176,
+        "primary_fee_spent": 78637500000823,
+        "total_refunded": 110630100004353,
+        "sender_fee_spent": 78637500000823
+      },
+      {
+        "label": "issue_invoice",
+        "tx_id": "0x76f24189b754701780e7dd76fb01ee96157e16f80d7460b9fe8b4f88b571ee0d",
+        "explorer": "https://explorer-studio-dev.genlayer.com/tx/0x76f24189b754701780e7dd76fb01ee96157e16f80d7460b9fe8b4f88b571ee0d",
+        "status": null,
+        "execution": null,
+        "leader_execution": "SUCCESS",
+        "value_credited": false,
+        "messages": [],
+        "pending_transactions": [],
+        "triggered_transactions": [],
+        "lifecycle": {
+          "state": "finalized",
+          "outcome": "accepted"
+        },
+        "paid_fee_value": 189269400005176,
+        "primary_fee_spent": 78638250000823,
+        "total_refunded": 110631150004353,
+        "sender_fee_spent": 78638250000823
+      },
+      {
+        "label": "issue_invoice",
+        "tx_id": "0xd231c5536c0b735311c6c74d850cd346234f7dc60c8e3399fd29438ad076705b",
+        "explorer": "https://explorer-studio-dev.genlayer.com/tx/0xd231c5536c0b735311c6c74d850cd346234f7dc60c8e3399fd29438ad076705b",
+        "status": null,
+        "execution": null,
+        "leader_execution": "SUCCESS",
+        "value_credited": false,
+        "messages": [],
+        "pending_transactions": [],
+        "triggered_transactions": [],
+        "lifecycle": {
+          "state": "finalized",
+          "outcome": "accepted"
+        },
+        "paid_fee_value": 189269400005176,
+        "primary_fee_spent": 78638250000823,
+        "total_refunded": 110631150004353,
+        "sender_fee_spent": 78638250000823
+      },
+      {
+        "label": "issue_invoice",
+        "tx_id": "0xdb8a026fe068b73bd7a4000a37446085f2b17ac8510cc9a28f797cdc2058aa41",
+        "explorer": "https://explorer-studio-dev.genlayer.com/tx/0xdb8a026fe068b73bd7a4000a37446085f2b17ac8510cc9a28f797cdc2058aa41",
+        "status": null,
+        "execution": null,
+        "leader_execution": "SUCCESS",
+        "value_credited": false,
+        "messages": [],
+        "pending_transactions": [],
+        "triggered_transactions": [],
+        "lifecycle": {
+          "state": "finalized",
+          "outcome": "accepted"
+        },
+        "paid_fee_value": 189270000005176,
+        "primary_fee_spent": 78638500000823,
+        "total_refunded": 110631500004353,
+        "sender_fee_spent": 78638500000823
+      },
+      {
+        "label": "issue_invoice",
+        "tx_id": "0x5f296b5552925f0fbfab28ee3e4d58dc21eff8bc920d7f95dbd4bf5af6433fbc",
+        "explorer": "https://explorer-studio-dev.genlayer.com/tx/0x5f296b5552925f0fbfab28ee3e4d58dc21eff8bc920d7f95dbd4bf5af6433fbc",
+        "status": null,
+        "execution": null,
+        "leader_execution": "SUCCESS",
+        "value_credited": false,
+        "messages": [],
+        "pending_transactions": [],
+        "triggered_transactions": [],
+        "lifecycle": {
+          "state": "finalized",
+          "outcome": "accepted"
+        },
+        "paid_fee_value": 189271800005176,
+        "primary_fee_spent": 78639250000823,
+        "total_refunded": 110632550004353,
+        "sender_fee_spent": 78639250000823
+      },
+      {
+        "label": "issue_invoice",
+        "tx_id": "0xbb933ddad6e15cd22c96d74df1229d51b1cd8deaf47e6e67518ee1777708cba4",
+        "explorer": "https://explorer-studio-dev.genlayer.com/tx/0xbb933ddad6e15cd22c96d74df1229d51b1cd8deaf47e6e67518ee1777708cba4",
+        "status": null,
+        "execution": null,
+        "leader_execution": "SUCCESS",
+        "value_credited": false,
+        "messages": [],
+        "pending_transactions": [],
+        "triggered_transactions": [],
+        "lifecycle": {
+          "state": "finalized",
+          "outcome": "accepted"
+        },
+        "paid_fee_value": 189272400005176,
+        "primary_fee_spent": 78639500000823,
+        "total_refunded": 110632900004353,
+        "sender_fee_spent": 78639500000823
+      }
+    ]
+  },
+  "list_invoices_for_mandate_page0": {
+    "has_more": true,
+    "ids": [
+      "1a11663d20201-p2-00",
+      "1a11663d20201-p2-01",
+      "1a11663d20201-p2-02",
+      "1a11663d20201-p2-03",
+      "1a11663d20201-p2-04",
+      "1a11663d20201-p2-05",
+      "1a11663d20201-p2-06",
+      "1a11663d20201-p2-07",
+      "1a11663d20201-p2-08",
+      "1a11663d20201-p2-09",
+      "1a11663d20201-p2-10",
+      "1a11663d20201-p2-11",
+      "1a11663d20201-p2-12",
+      "1a11663d20201-p2-13",
+      "1a11663d20201-p2-14",
+      "1a11663d20201-p2-15",
+      "1a11663d20201-p2-16",
+      "1a11663d20201-p2-17",
+      "1a11663d20201-p2-18",
+      "1a11663d20201-p2-19"
+    ],
+    "limit": 20,
+    "offset": 0,
+    "total": 21
+  },
+  "list_invoices_for_mandate_page1": {
+    "has_more": false,
+    "ids": [
+      "1a11663d20201-p2-20"
+    ],
+    "limit": 20,
+    "offset": 20,
+    "total": 21
+  },
+  "list_invoices_for_merchant_page0": {
+    "has_more": true,
+    "ids": [
+      "1a11663d20201-p2-00",
+      "1a11663d20201-p2-01",
+      "1a11663d20201-p2-02",
+      "1a11663d20201-p2-03",
+      "1a11663d20201-p2-04",
+      "1a11663d20201-p2-05",
+      "1a11663d20201-p2-06",
+      "1a11663d20201-p2-07",
+      "1a11663d20201-p2-08",
+      "1a11663d20201-p2-09",
+      "1a11663d20201-p2-10",
+      "1a11663d20201-p2-11",
+      "1a11663d20201-p2-12",
+      "1a11663d20201-p2-13",
+      "1a11663d20201-p2-14",
+      "1a11663d20201-p2-15",
+      "1a11663d20201-p2-16",
+      "1a11663d20201-p2-17",
+      "1a11663d20201-p2-18",
+      "1a11663d20201-p2-19"
+    ],
+    "limit": 20,
+    "offset": 0,
+    "total": 21
+  },
+  "list_invoices_for_merchant_page1": {
+    "has_more": false,
+    "ids": [
+      "1a11663d20201-p2-20"
+    ],
+    "limit": 20,
+    "offset": 20,
+    "total": 21
+  }
+}

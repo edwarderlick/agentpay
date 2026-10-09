@@ -1,0 +1,198 @@
+{
+  "case": "ambiguous invoice",
+  "expected_outcome": "UNCLEAR",
+  "fixture": "0x470e33C07b1F28F4BFA7355C941edD7d49d975f4",
+  "explorer": "https://explorer-studio-dev.genlayer.com/address/0x470e33C07b1F28F4BFA7355C941edD7d49d975f4",
+  "ids": {
+    "mandate": "unclear-m-1a1199abc5303",
+    "invoice": "unclear-inv-1a1199abc5303",
+    "request": "unclear-req-1a1199abc5303"
+  },
+  "txs": {
+    "create": {
+      "label": "create_mandate",
+      "tx_id": "0x2975e6a2a5399c4bba0bc3ed0f74cc6a47f7b602daa2f1d8c78baad03e852302",
+      "explorer": "https://explorer-studio-dev.genlayer.com/tx/0x2975e6a2a5399c4bba0bc3ed0f74cc6a47f7b602daa2f1d8c78baad03e852302",
+      "status": null,
+      "execution": null,
+      "leader_execution": "SUCCESS",
+      "value_credited": true,
+      "messages": [],
+      "pending_transactions": [],
+      "triggered_transactions": [],
+      "lifecycle": {
+        "state": "finalized",
+        "outcome": "accepted"
+      },
+      "paid_fee_value": 189264600005176,
+      "primary_fee_spent": 78636250000823,
+      "total_refunded": 110628350004353,
+      "sender_fee_spent": 78636250000823
+    },
+    "invoice": {
+      "label": "issue_invoice",
+      "tx_id": "0xb9b31764a6597f345874291d0a1ac970c20416fbc3ab47294465bbae7786975a",
+      "explorer": "https://explorer-studio-dev.genlayer.com/tx/0xb9b31764a6597f345874291d0a1ac970c20416fbc3ab47294465bbae7786975a",
+      "status": null,
+      "execution": null,
+      "leader_execution": "SUCCESS",
+      "value_credited": false,
+      "messages": [],
+      "pending_transactions": [],
+      "triggered_transactions": [],
+      "lifecycle": {
+        "state": "finalized",
+        "outcome": "accepted"
+      },
+      "paid_fee_value": 189254400005176,
+      "primary_fee_spent": 78632000000823,
+      "total_refunded": 110622400004353,
+      "sender_fee_spent": 78632000000823
+    },
+    "request": {
+      "label": "request_payment",
+      "tx_id": "0xc98542335440a6223f38d12d56c7b389566b1964d37feed374ce1b3694b45a4c",
+      "explorer": "https://explorer-studio-dev.genlayer.com/tx/0xc98542335440a6223f38d12d56c7b389566b1964d37feed374ce1b3694b45a4c",
+      "status": null,
+      "execution": null,
+      "leader_execution": "SUCCESS",
+      "value_credited": false,
+      "messages": [],
+      "pending_transactions": [],
+      "triggered_transactions": [],
+      "lifecycle": {
+        "state": "finalized",
+        "outcome": "accepted"
+      },
+      "paid_fee_value": 190818600005176,
+      "primary_fee_spent": 79508000000823,
+      "total_refunded": 111310600004353,
+      "sender_fee_spent": 79508000000823
+    }
+  },
+  "decision": {
+    "agent": "0xd051a174097179B31e867Fcb3838e747E102537A",
+    "amount": 10000000000000000,
+    "id": "unclear-req-1a1199abc5303",
+    "invoice_id": "unclear-inv-1a1199abc5303",
+    "mandate_id": "unclear-m-1a1199abc5303",
+    "outcome": "UNCLEAR",
+    "reason": "Invoice purpose is too vague to confirm it covers only permitted GPU cloud compute hours or LLM API inference tokens on listed providers. No specific provider or service type is mentioned."
+  },
+  "before": {
+    "fixture": "0x470e33C07b1F28F4BFA7355C941edD7d49d975f4",
+    "mandate": {
+      "agent": "0xd051a174097179B31e867Fcb3838e747E102537A",
+      "closed": false,
+      "expiry": 4102444800,
+      "id": "unclear-m-1a1199abc5303",
+      "merchants": [
+        "0x4abCc7E6B6B36642Aa8EDC43e79F1f17F5741070"
+      ],
+      "owner": "0x61BF3719c845fCf594ED80Fd4B641572f9A7F312",
+      "per_payment_cap": 10000000000000000,
+      "purpose": "Permitted expenses: GPU cloud compute hours and LLM API inference tokens on listed providers. Prohibited: domain renewals, personal subscriptions, travel.",
+      "remaining_budget": 20000000000000000,
+      "status": "active",
+      "title": "GPU Q3",
+      "total_budget": 20000000000000000
+    },
+    "credit": 0,
+    "withdrawn": 0,
+    "invoice": {
+      "amount": 10000000000000000,
+      "id": "unclear-inv-1a1199abc5303",
+      "mandate_id": "unclear-m-1a1199abc5303",
+      "merchant": "0x4abCc7E6B6B36642Aa8EDC43e79F1f17F5741070",
+      "purpose": "Miscellaneous cloud-related work as needed.",
+      "used": false
+    },
+    "request": {},
+    "accounting": {
+      "backed": 20000000000000000,
+      "contract_balance": 20000000000000000,
+      "total_credits": 0,
+      "total_remaining": 20000000000000000,
+      "uncommitted": 20000000000000000
+    },
+    "native": {
+      "contract": 20000000000000000,
+      "owner": 999939527658999995062,
+      "agent": 999999920768499999177,
+      "merchant": 999999842735999998354
+    },
+    "comparable": {
+      "remaining_budget": 20000000000000000,
+      "closed": false,
+      "status": "active",
+      "credit": 0,
+      "withdrawn": 0,
+      "invoice_used": false,
+      "contract_native": 20000000000000000,
+      "total_remaining": 20000000000000000,
+      "total_credits": 0
+    }
+  },
+  "after": {
+    "fixture": "0x470e33C07b1F28F4BFA7355C941edD7d49d975f4",
+    "mandate": {
+      "agent": "0xd051a174097179B31e867Fcb3838e747E102537A",
+      "closed": false,
+      "expiry": 4102444800,
+      "id": "unclear-m-1a1199abc5303",
+      "merchants": [
+        "0x4abCc7E6B6B36642Aa8EDC43e79F1f17F5741070"
+      ],
+      "owner": "0x61BF3719c845fCf594ED80Fd4B641572f9A7F312",
+      "per_payment_cap": 10000000000000000,
+      "purpose": "Permitted expenses: GPU cloud compute hours and LLM API inference tokens on listed providers. Prohibited: domain renewals, personal subscriptions, travel.",
+      "remaining_budget": 20000000000000000,
+      "status": "active",
+      "title": "GPU Q3",
+      "total_budget": 20000000000000000
+    },
+    "credit": 0,
+    "withdrawn": 0,
+    "invoice": {
+      "amount": 10000000000000000,
+      "id": "unclear-inv-1a1199abc5303",
+      "mandate_id": "unclear-m-1a1199abc5303",
+      "merchant": "0x4abCc7E6B6B36642Aa8EDC43e79F1f17F5741070",
+      "purpose": "Miscellaneous cloud-related work as needed.",
+      "used": true
+    },
+    "request": {
+      "agent": "0xd051a174097179B31e867Fcb3838e747E102537A",
+      "amount": 10000000000000000,
+      "id": "unclear-req-1a1199abc5303",
+      "invoice_id": "unclear-inv-1a1199abc5303",
+      "mandate_id": "unclear-m-1a1199abc5303",
+      "outcome": "UNCLEAR",
+      "reason": "Invoice purpose is too vague to confirm it covers only permitted GPU cloud compute hours or LLM API inference tokens on listed providers. No specific provider or service type is mentioned."
+    },
+    "accounting": {
+      "backed": 20000000000000000,
+      "contract_balance": 20000000000000000,
+      "total_credits": 0,
+      "total_remaining": 20000000000000000,
+      "uncommitted": 20000000000000000
+    },
+    "native": {
+      "contract": 20000000000000000,
+      "owner": 999939527658999995062,
+      "agent": 999999841260499998354,
+      "merchant": 999999842735999998354
+    },
+    "comparable": {
+      "remaining_budget": 20000000000000000,
+      "closed": false,
+      "status": "active",
+      "credit": 0,
+      "withdrawn": 0,
+      "invoice_used": true,
+      "contract_native": 20000000000000000,
+      "total_remaining": 20000000000000000,
+      "total_credits": 0
+    }
+  }
+}

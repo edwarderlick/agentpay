@@ -1,0 +1,198 @@
+{
+  "case": "clearly prohibited invoice",
+  "expected_outcome": "DENIED",
+  "fixture": "0xF9E3F924bDCf2aB1173e9A9569f5B47f9251b0BF",
+  "explorer": "https://explorer-studio-dev.genlayer.com/address/0xF9E3F924bDCf2aB1173e9A9569f5B47f9251b0BF",
+  "ids": {
+    "mandate": "denied-m-1a119972e3602",
+    "invoice": "denied-inv-1a119972e3602",
+    "request": "denied-req-1a119972e3602"
+  },
+  "txs": {
+    "create": {
+      "label": "create_mandate",
+      "tx_id": "0xc7581931ebb2748de33754fcdf8c92e0333730e5033c4a6f13e0fb3ee7c144e1",
+      "explorer": "https://explorer-studio-dev.genlayer.com/tx/0xc7581931ebb2748de33754fcdf8c92e0333730e5033c4a6f13e0fb3ee7c144e1",
+      "status": null,
+      "execution": null,
+      "leader_execution": "SUCCESS",
+      "value_credited": true,
+      "messages": [],
+      "pending_transactions": [],
+      "triggered_transactions": [],
+      "lifecycle": {
+        "state": "finalized",
+        "outcome": "accepted"
+      },
+      "paid_fee_value": 189264600005176,
+      "primary_fee_spent": 78636250000823,
+      "total_refunded": 110628350004353,
+      "sender_fee_spent": 78636250000823
+    },
+    "invoice": {
+      "label": "issue_invoice",
+      "tx_id": "0x76014bfb2d872d357266c1f5a5a494d216bcc44fe8791c47fd04102956749936",
+      "explorer": "https://explorer-studio-dev.genlayer.com/tx/0x76014bfb2d872d357266c1f5a5a494d216bcc44fe8791c47fd04102956749936",
+      "status": null,
+      "execution": null,
+      "leader_execution": "SUCCESS",
+      "value_credited": false,
+      "messages": [],
+      "pending_transactions": [],
+      "triggered_transactions": [],
+      "lifecycle": {
+        "state": "finalized",
+        "outcome": "accepted"
+      },
+      "paid_fee_value": 189254400005176,
+      "primary_fee_spent": 78632000000823,
+      "total_refunded": 110622400004353,
+      "sender_fee_spent": 78632000000823
+    },
+    "request": {
+      "label": "request_payment",
+      "tx_id": "0x6098fa2f41dbf3dcd7d8f026de33fe3eaa2669baabeba0666e344c767c593e3e",
+      "explorer": "https://explorer-studio-dev.genlayer.com/tx/0x6098fa2f41dbf3dcd7d8f026de33fe3eaa2669baabeba0666e344c767c593e3e",
+      "status": null,
+      "execution": null,
+      "leader_execution": "SUCCESS",
+      "value_credited": false,
+      "messages": [],
+      "pending_transactions": [],
+      "triggered_transactions": [],
+      "lifecycle": {
+        "state": "finalized",
+        "outcome": "accepted"
+      },
+      "paid_fee_value": 190847400005176,
+      "primary_fee_spent": 79231500000823,
+      "total_refunded": 111615900004353,
+      "sender_fee_spent": 79231500000823
+    }
+  },
+  "decision": {
+    "agent": "0xd051a174097179B31e867Fcb3838e747E102537A",
+    "amount": 10000000000000000,
+    "id": "denied-req-1a119972e3602",
+    "invoice_id": "denied-inv-1a119972e3602",
+    "mandate_id": "denied-m-1a119972e3602",
+    "outcome": "DENIED",
+    "reason": "The mandate explicitly prohibits domain renewals and personal subscriptions, which directly matches the invoice purpose."
+  },
+  "before": {
+    "fixture": "0xF9E3F924bDCf2aB1173e9A9569f5B47f9251b0BF",
+    "mandate": {
+      "agent": "0xd051a174097179B31e867Fcb3838e747E102537A",
+      "closed": false,
+      "expiry": 4102444800,
+      "id": "denied-m-1a119972e3602",
+      "merchants": [
+        "0x4abCc7E6B6B36642Aa8EDC43e79F1f17F5741070"
+      ],
+      "owner": "0x61BF3719c845fCf594ED80Fd4B641572f9A7F312",
+      "per_payment_cap": 10000000000000000,
+      "purpose": "Permitted expenses: GPU cloud compute hours and LLM API inference tokens on listed providers. Prohibited: domain renewals, personal subscriptions, travel.",
+      "remaining_budget": 20000000000000000,
+      "status": "active",
+      "title": "GPU Q3",
+      "total_budget": 20000000000000000
+    },
+    "credit": 0,
+    "withdrawn": 0,
+    "invoice": {
+      "amount": 10000000000000000,
+      "id": "denied-inv-1a119972e3602",
+      "mandate_id": "denied-m-1a119972e3602",
+      "merchant": "0x4abCc7E6B6B36642Aa8EDC43e79F1f17F5741070",
+      "purpose": "Annual domain renewal for a personal website.",
+      "used": false
+    },
+    "request": {},
+    "accounting": {
+      "backed": 20000000000000000,
+      "contract_balance": 20000000000000000,
+      "total_credits": 0,
+      "total_remaining": 20000000000000000,
+      "uncommitted": 20000000000000000
+    },
+    "native": {
+      "contract": 20000000000000000,
+      "owner": 999959685105999996708,
+      "agent": 1000000000000000000000,
+      "merchant": 999999921367999999177
+    },
+    "comparable": {
+      "remaining_budget": 20000000000000000,
+      "closed": false,
+      "status": "active",
+      "credit": 0,
+      "withdrawn": 0,
+      "invoice_used": false,
+      "contract_native": 20000000000000000,
+      "total_remaining": 20000000000000000,
+      "total_credits": 0
+    }
+  },
+  "after": {
+    "fixture": "0xF9E3F924bDCf2aB1173e9A9569f5B47f9251b0BF",
+    "mandate": {
+      "agent": "0xd051a174097179B31e867Fcb3838e747E102537A",
+      "closed": false,
+      "expiry": 4102444800,
+      "id": "denied-m-1a119972e3602",
+      "merchants": [
+        "0x4abCc7E6B6B36642Aa8EDC43e79F1f17F5741070"
+      ],
+      "owner": "0x61BF3719c845fCf594ED80Fd4B641572f9A7F312",
+      "per_payment_cap": 10000000000000000,
+      "purpose": "Permitted expenses: GPU cloud compute hours and LLM API inference tokens on listed providers. Prohibited: domain renewals, personal subscriptions, travel.",
+      "remaining_budget": 20000000000000000,
+      "status": "active",
+      "title": "GPU Q3",
+      "total_budget": 20000000000000000
+    },
+    "credit": 0,
+    "withdrawn": 0,
+    "invoice": {
+      "amount": 10000000000000000,
+      "id": "denied-inv-1a119972e3602",
+      "mandate_id": "denied-m-1a119972e3602",
+      "merchant": "0x4abCc7E6B6B36642Aa8EDC43e79F1f17F5741070",
+      "purpose": "Annual domain renewal for a personal website.",
+      "used": true
+    },
+    "request": {
+      "agent": "0xd051a174097179B31e867Fcb3838e747E102537A",
+      "amount": 10000000000000000,
+      "id": "denied-req-1a119972e3602",
+      "invoice_id": "denied-inv-1a119972e3602",
+      "mandate_id": "denied-m-1a119972e3602",
+      "outcome": "DENIED",
+      "reason": "The mandate explicitly prohibits domain renewals and personal subscriptions, which directly matches the invoice purpose."
+    },
+    "accounting": {
+      "backed": 20000000000000000,
+      "contract_balance": 20000000000000000,
+      "total_credits": 0,
+      "total_remaining": 20000000000000000,
+      "uncommitted": 20000000000000000
+    },
+    "native": {
+      "contract": 20000000000000000,
+      "owner": 999959685105999996708,
+      "agent": 999999920768499999177,
+      "merchant": 999999921367999999177
+    },
+    "comparable": {
+      "remaining_budget": 20000000000000000,
+      "closed": false,
+      "status": "active",
+      "credit": 0,
+      "withdrawn": 0,
+      "invoice_used": true,
+      "contract_native": 20000000000000000,
+      "total_remaining": 20000000000000000,
+      "total_credits": 0
+    }
+  }
+}

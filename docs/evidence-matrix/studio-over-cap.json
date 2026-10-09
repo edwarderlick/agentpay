@@ -1,0 +1,180 @@
+{
+  "case": "over-cap request",
+  "fixture": "0x415F2E9506cF7c9D560453af1C071DEFd2992523",
+  "explorer": "https://explorer-studio-dev.genlayer.com/address/0x415F2E9506cF7c9D560453af1C071DEFd2992523",
+  "ids": {
+    "mandate": "ocap-m-1a119a80aa506",
+    "invoice": "ocap-inv-1a119a80aa506",
+    "request": "ocap-req-1a119a80aa506"
+  },
+  "txs": {
+    "create": {
+      "label": "create_mandate",
+      "tx_id": "0xf9e4c18ef35c6a83e70f95a129ee1a3a0551dfda5c1ead1c31a8cde1d3368056",
+      "explorer": "https://explorer-studio-dev.genlayer.com/tx/0xf9e4c18ef35c6a83e70f95a129ee1a3a0551dfda5c1ead1c31a8cde1d3368056",
+      "status": null,
+      "execution": null,
+      "leader_execution": "SUCCESS",
+      "value_credited": true,
+      "messages": [],
+      "pending_transactions": [],
+      "triggered_transactions": [],
+      "lifecycle": {
+        "state": "finalized",
+        "outcome": "accepted"
+      },
+      "paid_fee_value": 189264600005176,
+      "primary_fee_spent": 78636250000823,
+      "total_refunded": 110628350004353,
+      "sender_fee_spent": 78636250000823
+    },
+    "invoice": {
+      "label": "issue_invoice",
+      "tx_id": "0x677f4693e5aba3ae0413ccb9b1b61efc4a803a89c65e2c5a26dc62221b63c294",
+      "explorer": "https://explorer-studio-dev.genlayer.com/tx/0x677f4693e5aba3ae0413ccb9b1b61efc4a803a89c65e2c5a26dc62221b63c294",
+      "status": null,
+      "execution": null,
+      "leader_execution": "SUCCESS",
+      "value_credited": false,
+      "messages": [],
+      "pending_transactions": [],
+      "triggered_transactions": [],
+      "lifecycle": {
+        "state": "finalized",
+        "outcome": "accepted"
+      },
+      "paid_fee_value": 189254400005176,
+      "primary_fee_spent": 78632000000823,
+      "total_refunded": 110622400004353,
+      "sender_fee_spent": 78632000000823
+    },
+    "request": {
+      "label": "request_payment",
+      "tx_id": "0x7d6cf90f4980b5006a963dc184987d45c5cd415860df502b9d46ef63cd7e9bd0",
+      "explorer": "https://explorer-studio-dev.genlayer.com/tx/0x7d6cf90f4980b5006a963dc184987d45c5cd415860df502b9d46ef63cd7e9bd0",
+      "status": null,
+      "execution": null,
+      "leader_execution": "ERROR",
+      "value_credited": false,
+      "messages": [],
+      "pending_transactions": [],
+      "triggered_transactions": [],
+      "lifecycle": {
+        "state": "finalized",
+        "outcome": "accepted"
+      },
+      "paid_fee_value": "50000000000005176",
+      "primary_fee_spent": 78628000000823,
+      "total_refunded": "49921372000004353",
+      "sender_fee_spent": 78628000000823
+    }
+  },
+  "before": {
+    "fixture": "0x415F2E9506cF7c9D560453af1C071DEFd2992523",
+    "mandate": {
+      "agent": "0xd051a174097179B31e867Fcb3838e747E102537A",
+      "closed": false,
+      "expiry": 4102444800,
+      "id": "ocap-m-1a119a80aa506",
+      "merchants": [
+        "0x4abCc7E6B6B36642Aa8EDC43e79F1f17F5741070"
+      ],
+      "owner": "0x61BF3719c845fCf594ED80Fd4B641572f9A7F312",
+      "per_payment_cap": 10000000000000000,
+      "purpose": "Permitted expenses: GPU cloud compute hours and LLM API inference tokens on listed providers. Prohibited: domain renewals, personal subscriptions, travel.",
+      "remaining_budget": 20000000000000000,
+      "status": "active",
+      "title": "GPU Q3",
+      "total_budget": 20000000000000000
+    },
+    "credit": 0,
+    "withdrawn": 0,
+    "invoice": {
+      "amount": 20000000000000000,
+      "id": "ocap-inv-1a119a80aa506",
+      "mandate_id": "ocap-m-1a119a80aa506",
+      "merchant": "0x4abCc7E6B6B36642Aa8EDC43e79F1f17F5741070",
+      "purpose": "NVIDIA A100 GPU cloud hours for a transformer inference batch.",
+      "used": false
+    },
+    "request": {},
+    "accounting": {
+      "backed": 20000000000000000,
+      "contract_balance": 20000000000000000,
+      "total_credits": 0,
+      "total_remaining": 20000000000000000,
+      "uncommitted": 20000000000000000
+    },
+    "native": {
+      "contract": 20000000000000000,
+      "owner": 999879055317999990124,
+      "agent": 999999525298499995062,
+      "merchant": 999999528211749994827
+    },
+    "comparable": {
+      "remaining_budget": 20000000000000000,
+      "closed": false,
+      "status": "active",
+      "credit": 0,
+      "withdrawn": 0,
+      "invoice_used": false,
+      "contract_native": 20000000000000000,
+      "total_remaining": 20000000000000000,
+      "total_credits": 0
+    }
+  },
+  "after": {
+    "fixture": "0x415F2E9506cF7c9D560453af1C071DEFd2992523",
+    "mandate": {
+      "agent": "0xd051a174097179B31e867Fcb3838e747E102537A",
+      "closed": false,
+      "expiry": 4102444800,
+      "id": "ocap-m-1a119a80aa506",
+      "merchants": [
+        "0x4abCc7E6B6B36642Aa8EDC43e79F1f17F5741070"
+      ],
+      "owner": "0x61BF3719c845fCf594ED80Fd4B641572f9A7F312",
+      "per_payment_cap": 10000000000000000,
+      "purpose": "Permitted expenses: GPU cloud compute hours and LLM API inference tokens on listed providers. Prohibited: domain renewals, personal subscriptions, travel.",
+      "remaining_budget": 20000000000000000,
+      "status": "active",
+      "title": "GPU Q3",
+      "total_budget": 20000000000000000
+    },
+    "credit": 0,
+    "withdrawn": 0,
+    "invoice": {
+      "amount": 20000000000000000,
+      "id": "ocap-inv-1a119a80aa506",
+      "mandate_id": "ocap-m-1a119a80aa506",
+      "merchant": "0x4abCc7E6B6B36642Aa8EDC43e79F1f17F5741070",
+      "purpose": "NVIDIA A100 GPU cloud hours for a transformer inference batch.",
+      "used": false
+    },
+    "request": {},
+    "accounting": {
+      "backed": 20000000000000000,
+      "contract_balance": 20000000000000000,
+      "total_credits": 0,
+      "total_remaining": 20000000000000000,
+      "uncommitted": 20000000000000000
+    },
+    "native": {
+      "contract": 20000000000000000,
+      "owner": 999879055317999990124,
+      "agent": 999999446670499994239,
+      "merchant": 999999528211749994827
+    },
+    "comparable": {
+      "remaining_budget": 20000000000000000,
+      "closed": false,
+      "status": "active",
+      "credit": 0,
+      "withdrawn": 0,
+      "invoice_used": false,
+      "contract_native": 20000000000000000,
+      "total_remaining": 20000000000000000,
+      "total_credits": 0
+    }
+  }
+}

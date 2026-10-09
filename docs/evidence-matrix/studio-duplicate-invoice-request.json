@@ -1,0 +1,390 @@
+{
+  "case": "duplicate invoice and request use",
+  "fixture": "0x7871e783c01AB05E82ca9677Fe7Ac4462a633742",
+  "explorer": "https://explorer-studio-dev.genlayer.com/address/0x7871e783c01AB05E82ca9677Fe7Ac4462a633742",
+  "ids": {
+    "mandate": "dup-m-1a119a1c01d05",
+    "invoice": "dup-inv-1a119a1c01d05",
+    "request": "dup-req-1a119a1c01d05",
+    "request2": "dup-req2-1a119a1c01d05"
+  },
+  "txs": {
+    "create": {
+      "label": "create_mandate",
+      "tx_id": "0xe40f851a6872d57fa8e11b995a6b9863835cb1d9fc92e1e7f0f3f665e739f2b3",
+      "explorer": "https://explorer-studio-dev.genlayer.com/tx/0xe40f851a6872d57fa8e11b995a6b9863835cb1d9fc92e1e7f0f3f665e739f2b3",
+      "status": null,
+      "execution": null,
+      "leader_execution": "SUCCESS",
+      "value_credited": true,
+      "messages": [],
+      "pending_transactions": [],
+      "triggered_transactions": [],
+      "lifecycle": {
+        "state": "finalized",
+        "outcome": "accepted"
+      },
+      "paid_fee_value": 189264600005176,
+      "primary_fee_spent": 78636250000823,
+      "total_refunded": 110628350004353,
+      "sender_fee_spent": 78636250000823
+    },
+    "invoice": {
+      "label": "issue_invoice",
+      "tx_id": "0xdaceddb6a2be93920f64fc85c92ca47fdecd47c070a8c829f216e35610c6629f",
+      "explorer": "https://explorer-studio-dev.genlayer.com/tx/0xdaceddb6a2be93920f64fc85c92ca47fdecd47c070a8c829f216e35610c6629f",
+      "status": null,
+      "execution": null,
+      "leader_execution": "SUCCESS",
+      "value_credited": false,
+      "messages": [],
+      "pending_transactions": [],
+      "triggered_transactions": [],
+      "lifecycle": {
+        "state": "finalized",
+        "outcome": "accepted"
+      },
+      "paid_fee_value": 189254400005176,
+      "primary_fee_spent": 78632000001058,
+      "total_refunded": 110622400004118,
+      "sender_fee_spent": 78632000001058
+    },
+    "first_request": {
+      "label": "request_payment",
+      "tx_id": "0x5ccd71d6bf61207f04edafaa7e66a0ceaf5d5ec10a706e1eef20060127eeada2",
+      "explorer": "https://explorer-studio-dev.genlayer.com/tx/0x5ccd71d6bf61207f04edafaa7e66a0ceaf5d5ec10a706e1eef20060127eeada2",
+      "status": null,
+      "execution": null,
+      "leader_execution": "SUCCESS",
+      "value_credited": false,
+      "messages": [],
+      "pending_transactions": [],
+      "triggered_transactions": [],
+      "lifecycle": {
+        "state": "finalized",
+        "outcome": "accepted"
+      },
+      "paid_fee_value": 190486800005176,
+      "primary_fee_spent": 79398000000823,
+      "total_refunded": 111088800004353,
+      "sender_fee_spent": 79398000000823
+    },
+    "duplicate_invoice": {
+      "label": "duplicate_invoice",
+      "tx_id": "0x8ca5e78f9ae39a4c3c284c71a3386fe0fc894ade761c8a8a03b7ed47e46606dc",
+      "explorer": "https://explorer-studio-dev.genlayer.com/tx/0x8ca5e78f9ae39a4c3c284c71a3386fe0fc894ade761c8a8a03b7ed47e46606dc",
+      "status": null,
+      "execution": null,
+      "leader_execution": "ERROR",
+      "value_credited": false,
+      "messages": [],
+      "pending_transactions": [],
+      "triggered_transactions": [],
+      "lifecycle": {
+        "state": "finalized",
+        "outcome": "accepted"
+      },
+      "paid_fee_value": "50000000000005176",
+      "primary_fee_spent": 78628000000823,
+      "total_refunded": "49921372000004353",
+      "sender_fee_spent": 78628000000823
+    },
+    "duplicate_request": {
+      "label": "duplicate_request",
+      "tx_id": "0x3b2559a87242ad1e6d22a5c2c60544f23e19913bfac1633d631080e8ae84f006",
+      "explorer": "https://explorer-studio-dev.genlayer.com/tx/0x3b2559a87242ad1e6d22a5c2c60544f23e19913bfac1633d631080e8ae84f006",
+      "status": null,
+      "execution": null,
+      "leader_execution": "ERROR",
+      "value_credited": false,
+      "messages": [],
+      "pending_transactions": [],
+      "triggered_transactions": [],
+      "lifecycle": {
+        "state": "finalized",
+        "outcome": "accepted"
+      },
+      "paid_fee_value": "50000000000005176",
+      "primary_fee_spent": 78628000000823,
+      "total_refunded": "49921372000004353",
+      "sender_fee_spent": 78628000000823
+    },
+    "duplicate_invoice_id": {
+      "label": "duplicate_invoice_id",
+      "tx_id": "0x944ab1128fde5f78cddceacc76d6d32fc2d69f3b42b4da1e53c2fcf8dca1ee49",
+      "explorer": "https://explorer-studio-dev.genlayer.com/tx/0x944ab1128fde5f78cddceacc76d6d32fc2d69f3b42b4da1e53c2fcf8dca1ee49",
+      "status": null,
+      "execution": null,
+      "leader_execution": "ERROR",
+      "value_credited": false,
+      "messages": [],
+      "pending_transactions": [],
+      "triggered_transactions": [],
+      "lifecycle": {
+        "state": "finalized",
+        "outcome": "accepted"
+      },
+      "paid_fee_value": "50000000000005176",
+      "primary_fee_spent": 78628000000823,
+      "total_refunded": "49921372000004353",
+      "sender_fee_spent": 78628000000823
+    }
+  },
+  "decision": {
+    "agent": "0xd051a174097179B31e867Fcb3838e747E102537A",
+    "amount": 10000000000000000,
+    "id": "dup-req-1a119a1c01d05",
+    "invoice_id": "dup-inv-1a119a1c01d05",
+    "mandate_id": "dup-m-1a119a1c01d05",
+    "outcome": "APPROVED",
+    "reason": "Invoice purpose is GPU cloud compute hours for transformer inference, which is explicitly permitted by the mandate and does not match any prohibited category."
+  },
+  "before_failed_calls": {
+    "fixture": "0x7871e783c01AB05E82ca9677Fe7Ac4462a633742",
+    "mandate": {
+      "agent": "0xd051a174097179B31e867Fcb3838e747E102537A",
+      "closed": false,
+      "expiry": 4102444800,
+      "id": "dup-m-1a119a1c01d05",
+      "merchants": [
+        "0x4abCc7E6B6B36642Aa8EDC43e79F1f17F5741070"
+      ],
+      "owner": "0x61BF3719c845fCf594ED80Fd4B641572f9A7F312",
+      "per_payment_cap": 10000000000000000,
+      "purpose": "Permitted expenses: GPU cloud compute hours and LLM API inference tokens on listed providers. Prohibited: domain renewals, personal subscriptions, travel.",
+      "remaining_budget": 10000000000000000,
+      "status": "active",
+      "title": "GPU Q3",
+      "total_budget": 20000000000000000
+    },
+    "credit": 10000000000000000,
+    "withdrawn": 0,
+    "invoice": {
+      "amount": 10000000000000000,
+      "id": "dup-inv-1a119a1c01d05",
+      "mandate_id": "dup-m-1a119a1c01d05",
+      "merchant": "0x4abCc7E6B6B36642Aa8EDC43e79F1f17F5741070",
+      "purpose": "NVIDIA A100 GPU cloud hours for a transformer inference batch.",
+      "used": true
+    },
+    "request": {
+      "agent": "0xd051a174097179B31e867Fcb3838e747E102537A",
+      "amount": 10000000000000000,
+      "id": "dup-req-1a119a1c01d05",
+      "invoice_id": "dup-inv-1a119a1c01d05",
+      "mandate_id": "dup-m-1a119a1c01d05",
+      "outcome": "APPROVED",
+      "reason": "Invoice purpose is GPU cloud compute hours for transformer inference, which is explicitly permitted by the mandate and does not match any prohibited category."
+    },
+    "accounting": {
+      "backed": 20000000000000000,
+      "contract_balance": 20000000000000000,
+      "total_credits": 10000000000000000,
+      "total_remaining": 10000000000000000,
+      "uncommitted": 10000000000000000
+    },
+    "native": {
+      "contract": 20000000000000000,
+      "owner": 999899212764999991770,
+      "agent": 999999682554499996708,
+      "merchant": 999999685471749996473
+    },
+    "comparable": {
+      "remaining_budget": 10000000000000000,
+      "closed": false,
+      "status": "active",
+      "credit": 10000000000000000,
+      "withdrawn": 0,
+      "invoice_used": true,
+      "contract_native": 20000000000000000,
+      "total_remaining": 10000000000000000,
+      "total_credits": 10000000000000000
+    }
+  },
+  "after_duplicate_invoice": {
+    "fixture": "0x7871e783c01AB05E82ca9677Fe7Ac4462a633742",
+    "mandate": {
+      "agent": "0xd051a174097179B31e867Fcb3838e747E102537A",
+      "closed": false,
+      "expiry": 4102444800,
+      "id": "dup-m-1a119a1c01d05",
+      "merchants": [
+        "0x4abCc7E6B6B36642Aa8EDC43e79F1f17F5741070"
+      ],
+      "owner": "0x61BF3719c845fCf594ED80Fd4B641572f9A7F312",
+      "per_payment_cap": 10000000000000000,
+      "purpose": "Permitted expenses: GPU cloud compute hours and LLM API inference tokens on listed providers. Prohibited: domain renewals, personal subscriptions, travel.",
+      "remaining_budget": 10000000000000000,
+      "status": "active",
+      "title": "GPU Q3",
+      "total_budget": 20000000000000000
+    },
+    "credit": 10000000000000000,
+    "withdrawn": 0,
+    "invoice": {
+      "amount": 10000000000000000,
+      "id": "dup-inv-1a119a1c01d05",
+      "mandate_id": "dup-m-1a119a1c01d05",
+      "merchant": "0x4abCc7E6B6B36642Aa8EDC43e79F1f17F5741070",
+      "purpose": "NVIDIA A100 GPU cloud hours for a transformer inference batch.",
+      "used": true
+    },
+    "request": {
+      "agent": "0xd051a174097179B31e867Fcb3838e747E102537A",
+      "amount": 10000000000000000,
+      "id": "dup-req-1a119a1c01d05",
+      "invoice_id": "dup-inv-1a119a1c01d05",
+      "mandate_id": "dup-m-1a119a1c01d05",
+      "outcome": "APPROVED",
+      "reason": "Invoice purpose is GPU cloud compute hours for transformer inference, which is explicitly permitted by the mandate and does not match any prohibited category."
+    },
+    "accounting": {
+      "backed": 20000000000000000,
+      "contract_balance": 20000000000000000,
+      "total_credits": 10000000000000000,
+      "total_remaining": 10000000000000000,
+      "uncommitted": 10000000000000000
+    },
+    "native": {
+      "contract": 20000000000000000,
+      "owner": 999899212764999991770,
+      "agent": 999999603926499995885,
+      "merchant": 999999685471749996473
+    },
+    "comparable": {
+      "remaining_budget": 10000000000000000,
+      "closed": false,
+      "status": "active",
+      "credit": 10000000000000000,
+      "withdrawn": 0,
+      "invoice_used": true,
+      "contract_native": 20000000000000000,
+      "total_remaining": 10000000000000000,
+      "total_credits": 10000000000000000
+    }
+  },
+  "after_duplicate_request": {
+    "fixture": "0x7871e783c01AB05E82ca9677Fe7Ac4462a633742",
+    "mandate": {
+      "agent": "0xd051a174097179B31e867Fcb3838e747E102537A",
+      "closed": false,
+      "expiry": 4102444800,
+      "id": "dup-m-1a119a1c01d05",
+      "merchants": [
+        "0x4abCc7E6B6B36642Aa8EDC43e79F1f17F5741070"
+      ],
+      "owner": "0x61BF3719c845fCf594ED80Fd4B641572f9A7F312",
+      "per_payment_cap": 10000000000000000,
+      "purpose": "Permitted expenses: GPU cloud compute hours and LLM API inference tokens on listed providers. Prohibited: domain renewals, personal subscriptions, travel.",
+      "remaining_budget": 10000000000000000,
+      "status": "active",
+      "title": "GPU Q3",
+      "total_budget": 20000000000000000
+    },
+    "credit": 10000000000000000,
+    "withdrawn": 0,
+    "invoice": {
+      "amount": 10000000000000000,
+      "id": "dup-inv-1a119a1c01d05",
+      "mandate_id": "dup-m-1a119a1c01d05",
+      "merchant": "0x4abCc7E6B6B36642Aa8EDC43e79F1f17F5741070",
+      "purpose": "NVIDIA A100 GPU cloud hours for a transformer inference batch.",
+      "used": true
+    },
+    "request": {
+      "agent": "0xd051a174097179B31e867Fcb3838e747E102537A",
+      "amount": 10000000000000000,
+      "id": "dup-req-1a119a1c01d05",
+      "invoice_id": "dup-inv-1a119a1c01d05",
+      "mandate_id": "dup-m-1a119a1c01d05",
+      "outcome": "APPROVED",
+      "reason": "Invoice purpose is GPU cloud compute hours for transformer inference, which is explicitly permitted by the mandate and does not match any prohibited category."
+    },
+    "accounting": {
+      "backed": 20000000000000000,
+      "contract_balance": 20000000000000000,
+      "total_credits": 10000000000000000,
+      "total_remaining": 10000000000000000,
+      "uncommitted": 10000000000000000
+    },
+    "native": {
+      "contract": 20000000000000000,
+      "owner": 999899212764999991770,
+      "agent": 999999525298499995062,
+      "merchant": 999999685471749996473
+    },
+    "comparable": {
+      "remaining_budget": 10000000000000000,
+      "closed": false,
+      "status": "active",
+      "credit": 10000000000000000,
+      "withdrawn": 0,
+      "invoice_used": true,
+      "contract_native": 20000000000000000,
+      "total_remaining": 10000000000000000,
+      "total_credits": 10000000000000000
+    }
+  },
+  "after_duplicate_invoice_id": {
+    "fixture": "0x7871e783c01AB05E82ca9677Fe7Ac4462a633742",
+    "mandate": {
+      "agent": "0xd051a174097179B31e867Fcb3838e747E102537A",
+      "closed": false,
+      "expiry": 4102444800,
+      "id": "dup-m-1a119a1c01d05",
+      "merchants": [
+        "0x4abCc7E6B6B36642Aa8EDC43e79F1f17F5741070"
+      ],
+      "owner": "0x61BF3719c845fCf594ED80Fd4B641572f9A7F312",
+      "per_payment_cap": 10000000000000000,
+      "purpose": "Permitted expenses: GPU cloud compute hours and LLM API inference tokens on listed providers. Prohibited: domain renewals, personal subscriptions, travel.",
+      "remaining_budget": 10000000000000000,
+      "status": "active",
+      "title": "GPU Q3",
+      "total_budget": 20000000000000000
+    },
+    "credit": 10000000000000000,
+    "withdrawn": 0,
+    "invoice": {
+      "amount": 10000000000000000,
+      "id": "dup-inv-1a119a1c01d05",
+      "mandate_id": "dup-m-1a119a1c01d05",
+      "merchant": "0x4abCc7E6B6B36642Aa8EDC43e79F1f17F5741070",
+      "purpose": "NVIDIA A100 GPU cloud hours for a transformer inference batch.",
+      "used": true
+    },
+    "request": {
+      "agent": "0xd051a174097179B31e867Fcb3838e747E102537A",
+      "amount": 10000000000000000,
+      "id": "dup-req-1a119a1c01d05",
+      "invoice_id": "dup-inv-1a119a1c01d05",
+      "mandate_id": "dup-m-1a119a1c01d05",
+      "outcome": "APPROVED",
+      "reason": "Invoice purpose is GPU cloud compute hours for transformer inference, which is explicitly permitted by the mandate and does not match any prohibited category."
+    },
+    "accounting": {
+      "backed": 20000000000000000,
+      "contract_balance": 20000000000000000,
+      "total_credits": 10000000000000000,
+      "total_remaining": 10000000000000000,
+      "uncommitted": 10000000000000000
+    },
+    "native": {
+      "contract": 20000000000000000,
+      "owner": 999899212764999991770,
+      "agent": 999999525298499995062,
+      "merchant": 999999606843749995650
+    },
+    "comparable": {
+      "remaining_budget": 10000000000000000,
+      "closed": false,
+      "status": "active",
+      "credit": 10000000000000000,
+      "withdrawn": 0,
+      "invoice_used": true,
+      "contract_native": 20000000000000000,
+      "total_remaining": 10000000000000000,
+      "total_credits": 10000000000000000
+    }
+  }
+}

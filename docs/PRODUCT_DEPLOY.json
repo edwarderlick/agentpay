@@ -1,0 +1,48 @@
+{
+  "address": "0x754E97a763ed0Ae12da496A68d7a47090F3f1c2F",
+  "explorer": "https://explorer-studio-dev.genlayer.com/address/0x754E97a763ed0Ae12da496A68d7a47090F3f1c2F",
+  "deployTx": "0xba9ba2fede114329de64f71698c5f71066b52376cf4b1df81cf5084c01de8fc3",
+  "chainId": 61997,
+  "rpc": "https://studio-next.genlayer.com/api",
+  "runner": "py-genlayer:5jycge4q8k23462jtb0b9fyey1s9qz928sz2nbrd9mg4sxqg2qng",
+  "schema": {
+    "name": "AgentPay",
+    "outcomes": [
+      "APPROVED",
+      "DENIED",
+      "UNCLEAR"
+    ],
+    "page_max": 50,
+    "views": [
+      "get_mandate",
+      "get_invoice",
+      "get_request",
+      "get_merchant_credit",
+      "get_withdrawn",
+      "get_merchant_credit_row",
+      "list_mandates_for_owner",
+      "list_mandates_for_agent",
+      "list_mandates_for_merchant",
+      "list_invoices_for_mandate",
+      "list_invoices_for_merchant",
+      "list_requests_for_mandate",
+      "list_requests_for_agent",
+      "list_credit_mandates_for_merchant",
+      "list_mandates",
+      "list_requests",
+      "get_accounting",
+      "get_contract_balance",
+      "get_schema"
+    ],
+    "writes": [
+      "create_mandate",
+      "issue_invoice",
+      "request_payment",
+      "withdraw_credit",
+      "close_mandate"
+    ]
+  },
+  "deployer": "0xb594bca7F432Fd660CAe236b8b9908a0B731260A",
+  "kind": "product",
+  "note": "Dedicated product deploy. Not a probe or gltest payment fixture."
+}

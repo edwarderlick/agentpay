@@ -1,0 +1,16 @@
+{
+  "name": "AgentPay",
+  "short_name": "AgentPay",
+  "description": "Spending mandates for AI agents on GenLayer Studio Next",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#fdf9f0",
+  "theme_color": "#152a1e",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}
