@@ -36,6 +36,8 @@
     ".next/dev/types/**/*.ts"
   ],
   "exclude": [
-    "node_modules"
+    "node_modules",
+    // Vercel Root Directory is frontend; this test imports ../../deploy.
+    "__tests__/deploy-script.test.ts"
   ]
 }
