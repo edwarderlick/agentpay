@@ -53,12 +53,21 @@ export function SiteHeader() {
         </div>
       ) : null}
       <div className="mx-auto flex h-20 max-w-7xl items-center justify-between gap-4 px-4 md:px-8">
-        <Link href="/" className="flex flex-col leading-none">
-          <span className="font-display text-[22px] font-bold tracking-tight text-primary">
-            AgentPay
-          </span>
-          <span className="font-mono text-[10px] uppercase tracking-[0.08em] text-[#424843]">
-            Studio Next mandates
+        <Link href="/" className="flex items-center gap-3">
+          <img
+            src="/agentpay-logo.png"
+            alt=""
+            width={40}
+            height={40}
+            className="h-10 w-10 shrink-0"
+          />
+          <span className="flex flex-col leading-none">
+            <span className="font-display text-[22px] font-bold tracking-tight text-primary">
+              AgentPay
+            </span>
+            <span className="font-mono text-[10px] uppercase tracking-[0.08em] text-[#424843]">
+              Studio Next mandates
+            </span>
           </span>
         </Link>
         <nav className="hidden items-center gap-5 lg:flex">

@@ -29,7 +29,13 @@ export const metadata: Metadata = {
     "Freeze a spending mandate for an AI agent on GenLayer Studio Next. Merchants invoice. Agents request payment. Validators judge purpose fit.",
   manifest: "/site.webmanifest",
   icons: {
-    icon: [{ url: "/favicon.svg", type: "image/svg+xml" }],
+    icon: [
+      { url: "/favicon-32.png", type: "image/png", sizes: "32x32" },
+      { url: "/favicon.png", type: "image/png", sizes: "512x512" },
+      { url: "/agentpay-logo.png", type: "image/png", sizes: "1024x1024" },
+    ],
+    apple: [{ url: "/apple-touch-icon.png", sizes: "180x180", type: "image/png" }],
+    shortcut: "/favicon-32.png",
   },
 };
 

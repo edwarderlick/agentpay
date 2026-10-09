@@ -8,9 +8,19 @@
   "theme_color": "#152a1e",
   "icons": [
     {
-      "src": "/favicon.svg",
-      "sizes": "any",
-      "type": "image/svg+xml"
+      "src": "/favicon-32.png",
+      "sizes": "32x32",
+      "type": "image/png"
+    },
+    {
+      "src": "/favicon.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/agentpay-logo.png",
+      "sizes": "1024x1024",
+      "type": "image/png"
     }
   ]
 }
