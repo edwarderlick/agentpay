@@ -37,6 +37,7 @@ artifacts/
 /frontend/out
 /frontend/next-env.d.ts
 /frontend/bun.lock
-/frontend/package-lock.json
 *.compiled.js
 *.tsbuildinfo
+
+.vercel

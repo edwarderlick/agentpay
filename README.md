@@ -6,7 +6,7 @@ An owner freezes a budget, an authorized agent wallet, an allowlisted merchant, 
 
 Studio Next GEN in this repository is a **test token**. It has no real-world monetary value.
 
-**Live demo: pending Vercel deployment.** There is no public app URL in this submission. Source, explorer, and on-chain reads work without a wallet.
+**Live demo:** [https://agentpay-omega-one.vercel.app](https://agentpay-omega-one.vercel.app). Studio Next test GEN only. Public routes and contract reads work without a wallet. WalletConnect needs the production origin allowed in Reown Cloud.
 
 | Reviewer doc | What it contains |
 | --- | --- |
@@ -79,7 +79,7 @@ Localhost UI captured 2026-10-07 against Studio Next. Test GEN only. This is not
 | Deployer | `0xb594bca7F432Fd660CAe236b8b9908a0B731260A` |
 | Runner | `py-genlayer:5jycge4q8k23462jtb0b9fyey1s9qz928sz2nbrd9mg4sxqg2qng` |
 | GitHub | [github.com/edwarderlick/agentpay](https://github.com/edwarderlick/agentpay) |
-| **Live demo** | **Pending Vercel deployment** |
+| **Live demo** | [agentpay-omega-one.vercel.app](https://agentpay-omega-one.vercel.app) |
 | SDKs | `genlayer-js` `2.0.0-rc.1`, Transaction Kit RC2 `0.1.0-rc.2` |
 
 Studionet (`61999`) is unused. Probe contracts and `gltest` fixtures are blocked in the frontend (`isContractReady()`).
@@ -104,7 +104,7 @@ These links are public. The Studio Next explorer method column often prints `(co
 | Second merchant withdraw 0.005 GEN | [0xacc2665c…3fbb](https://explorer-studio-dev.genlayer.com/tx/0xacc2665cd10a94533dc8e2cd14b37674218b5dc4dc783efb705c082ccab93fbb) |
 | Create + deposit `m-c690fd8825e402e54f11` (1 GEN, still active) | [0x812b29d0…88d5](https://explorer-studio-dev.genlayer.com/tx/0x812b29d0f72c40bf317cb7005ef52482a93f03fb121321f3771988c933c688d5) |
 
-Public app routes exist in this repo (`/mandates/[id]`, `/invoices/[id]`, `/decisions/[id]`). They will be reachable on Vercel after deploy. Until then, use the explorer rows above, or run the frontend locally.
+Public app routes on the live demo: [`/`](https://agentpay-omega-one.vercel.app/), [`/how-it-works`](https://agentpay-omega-one.vercel.app/how-it-works), [`/dashboard`](https://agentpay-omega-one.vercel.app/dashboard), [`/explore`](https://agentpay-omega-one.vercel.app/explore), [`/credits`](https://agentpay-omega-one.vercel.app/credits), [`/mandates/new`](https://agentpay-omega-one.vercel.app/mandates/new), [`/mandates/m-c690fd8825e402e54f11`](https://agentpay-omega-one.vercel.app/mandates/m-c690fd8825e402e54f11) (active, 1 GEN remaining as of 2026-10-09), [`/mandates/m-a56f4429378650ae158a`](https://agentpay-omega-one.vercel.app/mandates/m-a56f4429378650ae158a) (closed). Production JS inlines contract `0x754E97a763ed0Ae12da496A68d7a47090F3f1c2F`, chain `61997`, and the Studio Next RPC. Design demo defaults off (`demoMode` starts `false`).
 
 **Product vs fixtures.** Every hash in the table targets `0x754E97a7…1c2F`. DENIED / UNCLEAR / injection / revert cases in [docs/EVIDENCE_MATRIX.md](docs/EVIDENCE_MATRIX.md) used **new** `gltest` contracts. Those fixture addresses and hashes are not product-contract activity.
 
@@ -196,7 +196,7 @@ Three-wallet walkthrough: [docs/REVIEWER_DEMO.md](docs/REVIEWER_DEMO.md).
 
 CI on `main`: `.github/workflows/ci.yml` (lint + `pytest tests/direct/`) and `.github/workflows/frontend.yml` (`npm ci`, typecheck, vitest, webpack production build).
 
-Last local gate (2026-10-09): `pytest tests/direct/` **62 passed**; frontend vitest **22 files / 159 tests**; `tsc --noEmit` clean; `next build --webpack` (Next 16.0.3) succeeded; `genvm-lint` ok for `agentpay.py`, `eoa_transfer_probe.py`, and `settlement_probe.py`.
+Last local gate (2026-10-09): frontend vitest **22 files / 159 tests**; `tsc --noEmit` clean; `next build --webpack` (Next **16.0.10**, React2Shell patch) succeeded. Direct-mode pytest **62 passed** and `genvm-lint` were last run on the orphan-root commit. Vercel production build used `next build --webpack` (Next 16.0.10) with Root Directory `frontend`.
 
 ## Built from
 

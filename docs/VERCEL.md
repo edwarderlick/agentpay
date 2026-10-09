@@ -25,7 +25,8 @@ Set these on the Vercel project (Production and Preview):
 2. Copy the **project ID** (public).
 3. Allowed domains / origins:
    - `http://localhost:3000`
-   - `https://<your-vercel-app>.vercel.app`
+   - `https://agentpay-omega-one.vercel.app`
+   - `https://agentpay-edwarderlicks-projects.vercel.app`
    - any custom domain
 4. Redeploy after adding the variable. Client env vars are inlined at build time.
 
